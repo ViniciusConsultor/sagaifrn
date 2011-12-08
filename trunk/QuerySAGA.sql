@@ -2,17 +2,18 @@ create database SAGA
 
 use SAGA
 
+create table TipoUsuario(
+IdTipoUsuario int not null,
+constraint PK_IdTipoUsuario primary key (IdTipoUsuario),
+);
+
 create table Usuarios(
 IdUsuario int not null,
 Senha varchar(16) not null,
 NomeUsuario varchar(30) not null,
+IdTipoUsuario int not null,
 constraint PK_IdUsuario primary key (IdUsuario),
-);
-
-create table Administrador(
-IdAdmin int,
-constraint PK_IdAdmin primary key (IdAdmin),
-constraint FK_IdAdmin foreign key (IdAdmin) references Usuarios,
+constraint FK_IdTipoUsuario foreign key (IdTipoUsuario) references TipoUsuario
 );
 
 create table Professores(
@@ -27,24 +28,14 @@ constraint PK_IdAluno primary key (IdAluno),
 constraint FK_IdAluno foreign key (IdAluno) references Usuarios,
 );
 
-create table Diretor(
-IdDiretor int,
-constraint PK_IdDiretor primary key (IdDiretor),
-constraint FK_IdDiretor foreign key (IdDiretor) references Usuarios,
-);
-
 create table Avisos(
 IdAviso int not null identity,
 DataPublicacao date not null,
 DataExpiro date not null,
 TextoAviso varchar(1024) not null,
 IdProfessor int,
-IdAdmin int,
-IdDiretor int,
 constraint PK_IdAviso primary key (IdAviso),
 constraint FK_Avisos_IdProfessor foreign key (IdProfessor) references Professores,
-constraint FK_Avisos_IdAdmin foreign key (IdAdmin) references Administrador,
-constraint FK_Avisos_IdDiretor foreign key (IdDiretor) references Diretor,
 );
 
 create table Turmas(
