@@ -51,7 +51,7 @@ constraint PK_IdDisciplina primary key (IdDisciplina),
 );
 
 create table Notas(
-ValorNota float not null,
+ValorNota double not null,
 BimestreNota int not null,
 IdAluno int not null,
 IdDisciplina int not null,
