@@ -34,6 +34,7 @@ DataPublicacao date not null,
 DataExpiro date not null,
 TextoAviso varchar(1024) not null,
 IdProfessor int,
+Assunto varchar(126),
 constraint PK_IdAviso primary key (IdAviso),
 constraint FK_Avisos_IdProfessor foreign key (IdProfessor) references Professores,
 );
@@ -64,6 +65,7 @@ create table Faltas(
 DataFalta date not null,
 IdAluno int not null,
 IdDisciplina int not null,
+Justificativa varchar(126),
 constraint PK_DataFalta primary key (DataFalta),
 constraint FK_Faltas_IdAluno foreign key (IdAluno) references Alunos,
 constraint FK_Faltas_IdDisciplina foreign key (IdDisciplina) references Disciplinas,
@@ -91,4 +93,16 @@ IdAviso int not null,
 constraint PK_IdAviso_IdTurma primary key (IdAviso, IdTurma),
 constraint FK_Avisos_Turmas_IdTurma foreign key (IdTurma) references Turmas,
 constraint FK_Avisos_Turmas_IdDisciplina foreign key (IdAviso) references Avisos,
+);
+
+create table Duvidas(
+IdDuvida int not null identity,
+IdAluno int not null,
+IdProfessor int not null,
+Pergunta varchar(1024) not null,
+Resposta varchar(1024),
+Assunto varchar(126),
+constraint PK_IdDuvida primary key(IdDuvida),
+constraint FK_IdAuluno_Duvidas foreign key(IdAluno) references Alunos,
+constraint FK_IdProfessor_Duvidas foreign key(IdProfessor) references Professores,
 );

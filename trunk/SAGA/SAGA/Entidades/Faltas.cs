@@ -9,13 +9,14 @@ namespace WindowsFormsApplication1
     class Faltas
     {
         private DateTime dataFalta;
-        private Alunos idAlunos;
+        private Alunos idAluno;
         private Disciplinas idDisciplina;
+        private string justificativa;
 
-        internal Alunos IdAlunos
+        public Alunos IdAlunos
         {
-            get { return idAlunos; }
-            set { idAlunos = value; }
+            get { return idAluno; }
+            set { idAluno = value; }
         }
 
         public Faltas()
@@ -27,6 +28,18 @@ namespace WindowsFormsApplication1
         {
             get { return dataFalta; }
             set { dataFalta = value; }
+        }
+
+        public string Justificativa
+        {
+            get { return justificativa; }
+            set { justificativa = value; }
+        }
+
+        public Disciplinas IdDisciplina
+        {
+            get { return idDisciplina; }
+            set { idDisciplina = value; }
         }
     }
 }

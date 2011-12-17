@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SAGA.Entidades;
 
-namespace WindowsFormsApplication1
+namespace SAGA.Entidades
 {
     class Avisos_Turmas
     {
