@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SAGA.Entidades;
 
-namespace WindowsFormsApplication1
+namespace SAGA.Entidades
 {
     class Professores_Turmas
     {
@@ -22,6 +21,6 @@ namespace WindowsFormsApplication1
             get { return idTurma; }
             set { idTurma = value; }
         }
-        
+
     }
 }

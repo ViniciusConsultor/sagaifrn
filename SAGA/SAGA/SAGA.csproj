@@ -48,22 +48,99 @@
   <ItemGroup>
     <Compile Include="Entidades\Alunos.cs" />
     <Compile Include="Entidades\Avisos.cs" />
+    <Compile Include="Entidades\Avisos_Turmas.cs" />
     <Compile Include="Entidades\Disciplinas.cs" />
+    <Compile Include="Entidades\Disciplinas_Turmas.cs" />
+    <Compile Include="Entidades\Duvidas.cs" />
+    <Compile Include="Entidades\Faltas.cs" />
     <Compile Include="Entidades\Notas.cs" />
     <Compile Include="Entidades\Professores.cs" />
+    <Compile Include="Entidades\Professores_Turmas.cs" />
     <Compile Include="Entidades\TipoUsuario.cs" />
     <Compile Include="Entidades\Turmas.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
-    <Compile Include="frmLogin.cs">
+    <Compile Include="Formularios\Administrador\frmInicialAdministrador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <Compile Include="Formularios\Administrador\frmInicialAdministrador.Designer.cs">
+      <DependentUpon>frmInicialAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Alunos\frmAvisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Alunos\frmAvisos.Designer.cs">
+      <DependentUpon>frmAvisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Alunos\frmBoletim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Alunos\frmBoletim.Designer.cs">
+      <DependentUpon>frmBoletim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Alunos\frmDuvidasAlunos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Alunos\frmDuvidasAlunos.Designer.cs">
+      <DependentUpon>frmDuvidasAlunos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Alunos\frmInicialAlunos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Alunos\frmInicialAlunos.Designer.cs">
+      <DependentUpon>frmInicialAlunos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Diretor\frmInicialDiretor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Diretor\frmInicialDiretor.Designer.cs">
+      <DependentUpon>frmInicialDiretor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmLogIn.Designer.cs">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Professores\frmChamada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Professores\frmChamada.Designer.cs">
+      <DependentUpon>frmChamada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Professores\frmInicialProfessores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Professores\frmInicialProfessores.Designer.cs">
+      <DependentUpon>frmInicialProfessores.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Administrador\frmInicialAdministrador.resx">
+      <DependentUpon>frmInicialAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Alunos\frmAvisos.resx">
+      <DependentUpon>frmAvisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Alunos\frmBoletim.resx">
+      <DependentUpon>frmBoletim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Alunos\frmDuvidasAlunos.resx">
+      <DependentUpon>frmDuvidasAlunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Alunos\frmInicialAlunos.resx">
+      <DependentUpon>frmInicialAlunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Diretor\frmInicialDiretor.resx">
+      <DependentUpon>frmInicialDiretor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmLogIn.resx">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Professores\frmChamada.resx">
+      <DependentUpon>frmChamada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Professores\frmInicialProfessores.resx">
+      <DependentUpon>frmInicialProfessores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,6 +161,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

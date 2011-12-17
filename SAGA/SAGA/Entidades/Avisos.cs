@@ -10,7 +10,7 @@ namespace SAGA.Entidades
         private int idAviso;
         private DateTime dataPublicacao, dataExpiro;
         private Professores idProfessor;
-        private string textoAviso;
+        private string textoAviso, assunto;
 
         public string TextoAviso
         {
@@ -42,9 +42,17 @@ namespace SAGA.Entidades
             set { idAviso = value; }
         }
 
+        public string Assunto
+        {
+            get { return assunto; }
+            set { assunto = value; }
+        }
+
         public Avisos()
         {
             dataPublicacao = DateTime.Today.Date;
+            dataExpiro = DateTime.Today.AddDays(7).Date;
+            assunto = "Sem Assunto";
         }
     }
 }
