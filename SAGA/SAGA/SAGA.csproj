@@ -131,7 +131,6 @@
     <Compile Include="Formularios\Professores\frmNotas.Designer.cs">
       <DependentUpon>frmNotas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Operacoes_Banco\UsuarioBanco.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\Administrador\frmInicialAdministrador.resx">
