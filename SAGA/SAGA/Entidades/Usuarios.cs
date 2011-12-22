@@ -10,6 +10,7 @@ namespace SAGA.Entidades
         private int idUsuario;
         private string senha, nomeUsuario;
         private TipoUsuario idTipoUsuario;
+        public static int usuario;
 
         internal TipoUsuario IdTipoUsuario
         {

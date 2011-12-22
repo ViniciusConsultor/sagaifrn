@@ -89,16 +89,16 @@
     <Compile Include="Formularios\Alunos\frmInicialAlunos.Designer.cs">
       <DependentUpon>frmInicialAlunos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Diretor\frmInicialDiretor.cs">
+    <Compile Include="Formularios\Operacoes_Genericas\frmAvisos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Diretor\frmInicialDiretor.Designer.cs">
-      <DependentUpon>frmInicialDiretor.cs</DependentUpon>
+    <Compile Include="Formularios\Operacoes_Genericas\frmAvisos.Designer.cs">
+      <DependentUpon>frmAvisos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frmLogIn.cs">
+    <Compile Include="Formularios\Operacoes_Genericas\frmLogIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\frmLogIn.Designer.cs">
+    <Compile Include="Formularios\Operacoes_Genericas\frmLogIn.Designer.cs">
       <DependentUpon>frmLogIn.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Professores\frmChamada.cs">
@@ -107,12 +107,31 @@
     <Compile Include="Formularios\Professores\frmChamada.Designer.cs">
       <DependentUpon>frmChamada.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Professores\frmDuvidasProfessores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Professores\frmDuvidasProfessores.Designer.cs">
+      <DependentUpon>frmDuvidasProfessores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Professores\frmInicialProfessores.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Professores\frmInicialProfessores.Designer.cs">
       <DependentUpon>frmInicialProfessores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Professores\frmJustificarFalta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Professores\frmJustificarFalta.Designer.cs">
+      <DependentUpon>frmJustificarFalta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Professores\frmNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Professores\frmNotas.Designer.cs">
+      <DependentUpon>frmNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacoes_Banco\UsuarioBanco.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\Administrador\frmInicialAdministrador.resx">
@@ -130,17 +149,26 @@
     <EmbeddedResource Include="Formularios\Alunos\frmInicialAlunos.resx">
       <DependentUpon>frmInicialAlunos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Diretor\frmInicialDiretor.resx">
-      <DependentUpon>frmInicialDiretor.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Operacoes_Genericas\frmAvisos.resx">
+      <DependentUpon>frmAvisos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmLogIn.resx">
+    <EmbeddedResource Include="Formularios\Operacoes_Genericas\frmLogIn.resx">
       <DependentUpon>frmLogIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Professores\frmChamada.resx">
       <DependentUpon>frmChamada.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Professores\frmDuvidasProfessores.resx">
+      <DependentUpon>frmDuvidasProfessores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Professores\frmInicialProfessores.resx">
       <DependentUpon>frmInicialProfessores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Professores\frmJustificarFalta.resx">
+      <DependentUpon>frmJustificarFalta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Professores\frmNotas.resx">
+      <DependentUpon>frmNotas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
