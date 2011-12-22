@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using SAGA.Formularios;
+using SAGA.Formularios.Operacoes_Genericas;
 
 namespace SAGA
 {
