@@ -106,3 +106,13 @@ constraint PK_IdDuvida primary key(IdDuvida),
 constraint FK_IdAuluno_Duvidas foreign key(IdAluno) references Alunos,
 constraint FK_IdProfessor_Duvidas foreign key(IdProfessor) references Professores,
 );
+
+create table Horarios(
+IdDisciplina int not null,
+IdTurma int not null,
+NumeroHorario int not null,
+DiaSemana varchar(15) not null,
+Turno int not null,
+constraint FK_Horarios_Disciplinas foreign key (IdDisciplina) references Disciplinas,
+constraint FK_Horarios_Turmas foreign key (IdTurma) references Turmas,
+);

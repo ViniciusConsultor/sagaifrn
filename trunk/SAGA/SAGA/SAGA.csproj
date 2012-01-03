@@ -53,6 +53,7 @@
     <Compile Include="Entidades\Disciplinas_Turmas.cs" />
     <Compile Include="Entidades\Duvidas.cs" />
     <Compile Include="Entidades\Faltas.cs" />
+    <Compile Include="Entidades\Horarios.cs" />
     <Compile Include="Entidades\Notas.cs" />
     <Compile Include="Entidades\Professores.cs" />
     <Compile Include="Entidades\Professores_Turmas.cs" />
@@ -83,11 +84,23 @@
     <Compile Include="Formularios\Alunos\frmDuvidasAlunos.Designer.cs">
       <DependentUpon>frmDuvidasAlunos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Alunos\frmHorarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Alunos\frmHorarios.Designer.cs">
+      <DependentUpon>frmHorarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Alunos\frmInicialAlunos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Alunos\frmInicialAlunos.Designer.cs">
       <DependentUpon>frmInicialAlunos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Operacoes_Genericas\frmAlterarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Operacoes_Genericas\frmAlterarSenha.Designer.cs">
+      <DependentUpon>frmAlterarSenha.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Operacoes_Genericas\frmAvisos.cs">
       <SubType>Form</SubType>
@@ -145,8 +158,14 @@
     <EmbeddedResource Include="Formularios\Alunos\frmDuvidasAlunos.resx">
       <DependentUpon>frmDuvidasAlunos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Alunos\frmHorarios.resx">
+      <DependentUpon>frmHorarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Alunos\frmInicialAlunos.resx">
       <DependentUpon>frmInicialAlunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Operacoes_Genericas\frmAlterarSenha.resx">
+      <DependentUpon>frmAlterarSenha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Operacoes_Genericas\frmAvisos.resx">
       <DependentUpon>frmAvisos.cs</DependentUpon>
