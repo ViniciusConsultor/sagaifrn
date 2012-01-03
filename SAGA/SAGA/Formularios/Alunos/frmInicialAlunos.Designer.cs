@@ -32,12 +32,13 @@
             this.lblDuvidas = new System.Windows.Forms.Label();
             this.lblBoletim = new System.Windows.Forms.Label();
             this.lblModificarSenha = new System.Windows.Forms.Label();
+            this.lblHorarios = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblAvisos
             // 
             this.lblAvisos.AutoSize = true;
-            this.lblAvisos.Location = new System.Drawing.Point(12, 104);
+            this.lblAvisos.Location = new System.Drawing.Point(12, 136);
             this.lblAvisos.Name = "lblAvisos";
             this.lblAvisos.Size = new System.Drawing.Size(38, 13);
             this.lblAvisos.TabIndex = 5;
@@ -46,7 +47,7 @@
             // lblDuvidas
             // 
             this.lblDuvidas.AutoSize = true;
-            this.lblDuvidas.Location = new System.Drawing.Point(12, 65);
+            this.lblDuvidas.Location = new System.Drawing.Point(12, 97);
             this.lblDuvidas.Name = "lblDuvidas";
             this.lblDuvidas.Size = new System.Drawing.Size(46, 13);
             this.lblDuvidas.TabIndex = 4;
@@ -64,17 +65,27 @@
             // lblModificarSenha
             // 
             this.lblModificarSenha.AutoSize = true;
-            this.lblModificarSenha.Location = new System.Drawing.Point(12, 142);
+            this.lblModificarSenha.Location = new System.Drawing.Point(12, 174);
             this.lblModificarSenha.Name = "lblModificarSenha";
             this.lblModificarSenha.Size = new System.Drawing.Size(84, 13);
             this.lblModificarSenha.TabIndex = 6;
             this.lblModificarSenha.Text = "Modificar Senha";
             // 
+            // lblHorarios
+            // 
+            this.lblHorarios.AutoSize = true;
+            this.lblHorarios.Location = new System.Drawing.Point(12, 65);
+            this.lblHorarios.Name = "lblHorarios";
+            this.lblHorarios.Size = new System.Drawing.Size(85, 13);
+            this.lblHorarios.TabIndex = 7;
+            this.lblHorarios.Text = "Horarios de Aula";
+            // 
             // frmInicialAlunos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(116, 180);
+            this.ClientSize = new System.Drawing.Size(116, 212);
+            this.Controls.Add(this.lblHorarios);
             this.Controls.Add(this.lblModificarSenha);
             this.Controls.Add(this.lblAvisos);
             this.Controls.Add(this.lblDuvidas);
@@ -92,5 +103,6 @@
         private System.Windows.Forms.Label lblDuvidas;
         private System.Windows.Forms.Label lblBoletim;
         private System.Windows.Forms.Label lblModificarSenha;
+        private System.Windows.Forms.Label lblHorarios;
     }
 }
