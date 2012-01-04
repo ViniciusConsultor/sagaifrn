@@ -8,7 +8,7 @@ constraint PK_IdTipoUsuario primary key (IdTipoUsuario),
 );
 
 create table Usuarios(
-IdUsuario int not null,
+IdUsuario int not null identity,
 Senha varchar(16) not null,
 NomeUsuario varchar(30) not null,
 IdTipoUsuario int not null,

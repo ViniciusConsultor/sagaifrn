@@ -35,14 +35,14 @@
             this.lblEditarFalta = new System.Windows.Forms.Label();
             this.lblModificarSenha = new System.Windows.Forms.Label();
             this.lblCadastrarHorario = new System.Windows.Forms.Label();
-            this.gpbCadastros = new System.Windows.Forms.GroupBox();
-            this.gpbCadastros.SuspendLayout();
+            this.lblModificarHorario = new System.Windows.Forms.Label();
+            this.lblCadastrarTurma = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblAddUsuario
             // 
             this.lblAddUsuario.AutoSize = true;
-            this.lblAddUsuario.Location = new System.Drawing.Point(6, 22);
+            this.lblAddUsuario.Location = new System.Drawing.Point(12, 22);
             this.lblAddUsuario.Name = "lblAddUsuario";
             this.lblAddUsuario.Size = new System.Drawing.Size(90, 13);
             this.lblAddUsuario.TabIndex = 0;
@@ -51,7 +51,7 @@
             // lblAvisos
             // 
             this.lblAvisos.AutoSize = true;
-            this.lblAvisos.Location = new System.Drawing.Point(12, 153);
+            this.lblAvisos.Location = new System.Drawing.Point(12, 113);
             this.lblAvisos.Name = "lblAvisos";
             this.lblAvisos.Size = new System.Drawing.Size(38, 13);
             this.lblAvisos.TabIndex = 1;
@@ -60,7 +60,7 @@
             // lblModificarUsuario
             // 
             this.lblModificarUsuario.AutoSize = true;
-            this.lblModificarUsuario.Location = new System.Drawing.Point(12, 54);
+            this.lblModificarUsuario.Location = new System.Drawing.Point(12, 45);
             this.lblModificarUsuario.Name = "lblModificarUsuario";
             this.lblModificarUsuario.Size = new System.Drawing.Size(89, 13);
             this.lblModificarUsuario.TabIndex = 2;
@@ -69,7 +69,7 @@
             // lblModificarNota
             // 
             this.lblModificarNota.AutoSize = true;
-            this.lblModificarNota.Location = new System.Drawing.Point(12, 87);
+            this.lblModificarNota.Location = new System.Drawing.Point(12, 68);
             this.lblModificarNota.Name = "lblModificarNota";
             this.lblModificarNota.Size = new System.Drawing.Size(76, 13);
             this.lblModificarNota.TabIndex = 3;
@@ -78,7 +78,7 @@
             // lblEditarFalta
             // 
             this.lblEditarFalta.AutoSize = true;
-            this.lblEditarFalta.Location = new System.Drawing.Point(12, 120);
+            this.lblEditarFalta.Location = new System.Drawing.Point(12, 91);
             this.lblEditarFalta.Name = "lblEditarFalta";
             this.lblEditarFalta.Size = new System.Drawing.Size(60, 13);
             this.lblEditarFalta.TabIndex = 5;
@@ -87,7 +87,7 @@
             // lblModificarSenha
             // 
             this.lblModificarSenha.AutoSize = true;
-            this.lblModificarSenha.Location = new System.Drawing.Point(12, 184);
+            this.lblModificarSenha.Location = new System.Drawing.Point(12, 135);
             this.lblModificarSenha.Name = "lblModificarSenha";
             this.lblModificarSenha.Size = new System.Drawing.Size(84, 13);
             this.lblModificarSenha.TabIndex = 6;
@@ -96,28 +96,38 @@
             // lblCadastrarHorario
             // 
             this.lblCadastrarHorario.AutoSize = true;
-            this.lblCadastrarHorario.Location = new System.Drawing.Point(12, 226);
+            this.lblCadastrarHorario.Location = new System.Drawing.Point(12, 157);
             this.lblCadastrarHorario.Name = "lblCadastrarHorario";
-            this.lblCadastrarHorario.Size = new System.Drawing.Size(86, 13);
+            this.lblCadastrarHorario.Size = new System.Drawing.Size(89, 13);
             this.lblCadastrarHorario.TabIndex = 7;
-            this.lblCadastrarHorario.Text = "CadastrarHorario";
+            this.lblCadastrarHorario.Text = "Cadastrar Horário";
             // 
-            // gpbCadastros
+            // lblModificarHorario
             // 
-            this.gpbCadastros.Controls.Add(this.lblAddUsuario);
-            this.gpbCadastros.Location = new System.Drawing.Point(396, 32);
-            this.gpbCadastros.Name = "gpbCadastros";
-            this.gpbCadastros.Size = new System.Drawing.Size(200, 100);
-            this.gpbCadastros.TabIndex = 8;
-            this.gpbCadastros.TabStop = false;
-            this.gpbCadastros.Text = "Cadastros";
+            this.lblModificarHorario.AutoSize = true;
+            this.lblModificarHorario.Location = new System.Drawing.Point(12, 179);
+            this.lblModificarHorario.Name = "lblModificarHorario";
+            this.lblModificarHorario.Size = new System.Drawing.Size(87, 13);
+            this.lblModificarHorario.TabIndex = 9;
+            this.lblModificarHorario.Text = "Modificar Horário";
+            // 
+            // lblCadastrarTurma
+            // 
+            this.lblCadastrarTurma.AutoSize = true;
+            this.lblCadastrarTurma.Location = new System.Drawing.Point(12, 201);
+            this.lblCadastrarTurma.Name = "lblCadastrarTurma";
+            this.lblCadastrarTurma.Size = new System.Drawing.Size(85, 13);
+            this.lblCadastrarTurma.TabIndex = 10;
+            this.lblCadastrarTurma.Text = "Cadastrar Turma";
             // 
             // frmInicialAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 274);
-            this.Controls.Add(this.gpbCadastros);
+            this.ClientSize = new System.Drawing.Size(130, 234);
+            this.Controls.Add(this.lblCadastrarTurma);
+            this.Controls.Add(this.lblAddUsuario);
+            this.Controls.Add(this.lblModificarHorario);
             this.Controls.Add(this.lblCadastrarHorario);
             this.Controls.Add(this.lblModificarSenha);
             this.Controls.Add(this.lblEditarFalta);
@@ -126,8 +136,6 @@
             this.Controls.Add(this.lblAvisos);
             this.Name = "frmInicialAdministrador";
             this.Text = "início";
-            this.gpbCadastros.ResumeLayout(false);
-            this.gpbCadastros.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,6 +150,7 @@
         private System.Windows.Forms.Label lblEditarFalta;
         private System.Windows.Forms.Label lblModificarSenha;
         private System.Windows.Forms.Label lblCadastrarHorario;
-        private System.Windows.Forms.GroupBox gpbCadastros;
+        private System.Windows.Forms.Label lblModificarHorario;
+        private System.Windows.Forms.Label lblCadastrarTurma;
     }
 }
