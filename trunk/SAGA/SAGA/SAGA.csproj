@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Banco\UsuarioBanco.cs" />
     <Compile Include="Entidades\Alunos.cs" />
     <Compile Include="Entidades\Avisos.cs" />
     <Compile Include="Entidades\Avisos_Turmas.cs" />
@@ -60,11 +61,53 @@
     <Compile Include="Entidades\TipoUsuario.cs" />
     <Compile Include="Entidades\Turmas.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
+    <Compile Include="Formularios\Administrador\frmCadastrarHorario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\frmCadastrarHorario.Designer.cs">
+      <DependentUpon>frmCadastrarHorario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\frmCadastrarTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\frmCadastrarTurma.Designer.cs">
+      <DependentUpon>frmCadastrarTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\frmCadastrarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\frmCadastrarUsuario.Designer.cs">
+      <DependentUpon>frmCadastrarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Administrador\frmInicialAdministrador.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Administrador\frmInicialAdministrador.Designer.cs">
       <DependentUpon>frmInicialAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\frmModificarFalta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\frmModificarFalta.Designer.cs">
+      <DependentUpon>frmModificarFalta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\frmModificarHorario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\frmModificarHorario.Designer.cs">
+      <DependentUpon>frmModificarHorario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\frmModificarNota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\frmModificarNota.Designer.cs">
+      <DependentUpon>frmModificarNota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\frmModificarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\frmModificarUsuario.Designer.cs">
+      <DependentUpon>frmModificarUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Alunos\frmAvisos.cs">
       <SubType>Form</SubType>
@@ -146,8 +189,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\Administrador\frmCadastrarHorario.resx">
+      <DependentUpon>frmCadastrarHorario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\frmCadastrarTurma.resx">
+      <DependentUpon>frmCadastrarTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\frmCadastrarUsuario.resx">
+      <DependentUpon>frmCadastrarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Administrador\frmInicialAdministrador.resx">
       <DependentUpon>frmInicialAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\frmModificarFalta.resx">
+      <DependentUpon>frmModificarFalta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\frmModificarHorario.resx">
+      <DependentUpon>frmModificarHorario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\frmModificarNota.resx">
+      <DependentUpon>frmModificarNota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\frmModificarUsuario.resx">
+      <DependentUpon>frmModificarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Alunos\frmAvisos.resx">
       <DependentUpon>frmAvisos.cs</DependentUpon>
