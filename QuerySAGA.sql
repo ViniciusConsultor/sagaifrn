@@ -22,12 +22,6 @@ constraint PK_IdProfessor primary key (IdProfessor),
 constraint FK_IdProfessor foreign key (IdProfessor) references Usuarios,
 );
 
-create table Alunos(
-IdAluno int,
-constraint PK_IdAluno primary key (IdAluno),
-constraint FK_IdAluno foreign key (IdAluno) references Usuarios,
-);
-
 create table Avisos(
 IdAviso int not null identity,
 DataPublicacao date not null,
@@ -45,6 +39,14 @@ NomeTurma varchar(20) not null,
 constraint PK_IdTurma primary key (IdTurma),
 );
 
+create table Alunos(
+IdAluno int not null,
+IdTurma int not null,
+constraint PK_IdAluno primary key (IdAluno),
+constraint FK_IdAluno foreign key (IdAluno) references Usuarios,
+constraint FK_IdTurma foreign key (IdTurma) references Turmas,
+);
+
 create table Disciplinas(
 IdDisciplina int not null identity,
 NomeDisciplina varchar(20) not null,
@@ -52,7 +54,7 @@ constraint PK_IdDisciplina primary key (IdDisciplina),
 );
 
 create table Notas(
-ValorNota double not null,
+ValorNota float not null,
 BimestreNota int not null,
 IdAluno int not null,
 IdDisciplina int not null,
