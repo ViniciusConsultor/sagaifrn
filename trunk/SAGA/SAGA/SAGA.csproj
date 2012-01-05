@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Banco\TipoUsuarioBanco.cs" />
     <Compile Include="Banco\UsuarioBanco.cs" />
     <Compile Include="Entidades\Alunos.cs" />
     <Compile Include="Entidades\Avisos.cs" />
@@ -109,11 +111,11 @@
     <Compile Include="Formularios\Administrador\frmModificarUsuario.Designer.cs">
       <DependentUpon>frmModificarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Alunos\frmAvisos.cs">
+    <Compile Include="Formularios\Alunos\frmAvisosAlunos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Alunos\frmAvisos.Designer.cs">
-      <DependentUpon>frmAvisos.cs</DependentUpon>
+    <Compile Include="Formularios\Alunos\frmAvisosAlunos.Designer.cs">
+      <DependentUpon>frmAvisosAlunos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Alunos\frmBoletim.cs">
       <SubType>Form</SubType>
@@ -139,6 +141,7 @@
     <Compile Include="Formularios\Alunos\frmInicialAlunos.Designer.cs">
       <DependentUpon>frmInicialAlunos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Formularios.cs" />
     <Compile Include="Formularios\Operacoes_Genericas\frmAlterarSenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +192,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="app.config" />
     <EmbeddedResource Include="Formularios\Administrador\frmCadastrarHorario.resx">
       <DependentUpon>frmCadastrarHorario.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,8 +217,8 @@
     <EmbeddedResource Include="Formularios\Administrador\frmModificarUsuario.resx">
       <DependentUpon>frmModificarUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Alunos\frmAvisos.resx">
-      <DependentUpon>frmAvisos.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Alunos\frmAvisosAlunos.resx">
+      <DependentUpon>frmAvisosAlunos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Alunos\frmBoletim.resx">
       <DependentUpon>frmBoletim.cs</DependentUpon>
@@ -271,7 +275,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
