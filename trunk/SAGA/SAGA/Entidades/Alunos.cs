@@ -12,7 +12,7 @@ namespace SAGA.Entidades
     {
         [Column(IsPrimaryKey=true, Name="IdAluno", CanBeNull=false)]
         private Usuarios idAluno;
-        [Column(Name = "IdTurma", CanBeNull = false)]
+        [Column(Name = "IdTurma", CanBeNull = false, IsPrimaryKey=true)]
         private Turmas idTurma;
 
         public Turmas IdTurma

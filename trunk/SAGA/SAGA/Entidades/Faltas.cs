@@ -3,14 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using SAGA.Entidades;
+using System.Data.Linq;
+using System.Data.Linq.Mapping;
 
 namespace WindowsFormsApplication1
 {
+    [Table(Name="Faltas")]
     class Faltas
     {
+        [Column(Name="DataFalta", CanBeNull=false, IsPrimaryKey=true)]
         private DateTime dataFalta;
+        [Column(Name = "IdAluno", CanBeNull = false)]
         private Alunos idAluno;
+        [Column(Name = "IdDisciplina", CanBeNull = false)]
         private Disciplinas idDisciplina;
+        [Column(Name = "Justificativa", CanBeNull = true)]
         private string justificativa;
 
         public Alunos IdAlunos

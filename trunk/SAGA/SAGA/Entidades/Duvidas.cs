@@ -2,15 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data.Linq;
+using System.Data.Linq.Mapping;
 
 namespace SAGA.Entidades
 {
+    [Table(Name="Duvidas")]
     class Duvidas
     {
+        [Column(IsPrimaryKey = true, Name = "IdDuvida", CanBeNull = false)]
         private int idDuvida;
+        [Column(Name = "IdAluno", CanBeNull = false)]
         private Alunos idAluno;
+        [Column(Name = "IdProfessor", CanBeNull = false)]
         private Professores idProfessor;
-        private string duvida, resposta, assunto;
+        [Column(Name = "Pergunta", CanBeNull = false)]
+        private string duvida;
+        [Column(Name = "Resposta", CanBeNull = false)]
+        private string resposta;
+        [Column(Name = "Assunto", CanBeNull = false)]
+        private string assunto;
 
         public int IdDuvida
         {
