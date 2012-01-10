@@ -2,15 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data.Linq.Mapping;
+using System.Data.Linq;
 
 namespace SAGA.Entidades
 {
+    [Table(Name="Avisos")]
     class Avisos
     {
+        [Column(IsPrimaryKey=true, Name="IdAviso", CanBeNull=false)]
         private int idAviso;
-        private DateTime dataPublicacao, dataExpiro;
+        [Column(Name = "DataPublicacao")]
+        private DateTime dataPublicacao;
+        [Column(Name = "DataExpiro")]
+        private DateTime dataExpiro;
+        [Column(Name = "IdProfessor", CanBeNull=false)]
         private Professores idProfessor;
-        private string textoAviso, assunto;
+        [Column(Name = "TextAviso", CanBeNull = false)]
+        private string textoAviso;
+        [Column(Name = "Assunto")]
+        private string assunto;
 
         public string TextoAviso
         {

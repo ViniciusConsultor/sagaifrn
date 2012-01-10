@@ -44,7 +44,6 @@
             this.btnEntrar.TabIndex = 0;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
-            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // lblSenha
             // 
@@ -102,7 +101,6 @@
             this.Controls.Add(this.btnEntrar);
             this.Name = "frmLogIn";
             this.Text = "frmLogIn";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLogIn_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
