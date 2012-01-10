@@ -2,12 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data.Linq;
+using System.Data.Linq.Mapping;
 
 namespace SAGA.Entidades
 {
+    [Table(Name="Disciplinas")]
     class Disciplinas
     {
+        [Column(Name="IdDisciplina", CanBeNull=false, IsPrimaryKey=true)]
         private int idDisciplina;
+        [Column(Name="NomeDisciplina", CanBeNull=false)]
         private string nomeDisciplina;
 
         public string NomeDisciplina

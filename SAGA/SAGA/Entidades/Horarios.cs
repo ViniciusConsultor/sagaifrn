@@ -2,14 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data.Linq;
+using System.Data.Linq.Mapping;
 
 namespace SAGA.Entidades
 {
+    [Table(Name = "Horarios")]
     class Horarios
     {
+        [Column(Name = "DiaSemana", CanBeNull = false)]
         private string diaSemana;
-        private int numeroHorario, turno;
+        [Column(Name = "NumeroHorario", CanBeNull = false)]
+        private int numeroHorario;
+        [Column(Name = "Turno", CanBeNull = false)]
+        private int turno;
+        [Column(Name = "IdDisciplina", CanBeNull = false)]
         private Disciplinas idDisciplina;
+        [Column(Name = "IdTurma", CanBeNull = false)]
         private Turmas idTurma;
 
         public int Turno
