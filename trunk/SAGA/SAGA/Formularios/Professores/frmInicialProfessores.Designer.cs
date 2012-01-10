@@ -34,12 +34,13 @@
             this.lblAvisos = new System.Windows.Forms.Label();
             this.lblModificarSenha = new System.Windows.Forms.Label();
             this.lblJustificarFalta = new System.Windows.Forms.Label();
+            this.lblSair = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblChamada
             // 
             this.lblChamada.AutoSize = true;
-            this.lblChamada.Location = new System.Drawing.Point(12, 28);
+            this.lblChamada.Location = new System.Drawing.Point(12, 44);
             this.lblChamada.Name = "lblChamada";
             this.lblChamada.Size = new System.Drawing.Size(52, 13);
             this.lblChamada.TabIndex = 0;
@@ -48,7 +49,7 @@
             // lblNotas
             // 
             this.lblNotas.AutoSize = true;
-            this.lblNotas.Location = new System.Drawing.Point(12, 64);
+            this.lblNotas.Location = new System.Drawing.Point(12, 80);
             this.lblNotas.Name = "lblNotas";
             this.lblNotas.Size = new System.Drawing.Size(35, 13);
             this.lblNotas.TabIndex = 1;
@@ -57,7 +58,7 @@
             // lblDuvidas
             // 
             this.lblDuvidas.AutoSize = true;
-            this.lblDuvidas.Location = new System.Drawing.Point(12, 104);
+            this.lblDuvidas.Location = new System.Drawing.Point(12, 120);
             this.lblDuvidas.Name = "lblDuvidas";
             this.lblDuvidas.Size = new System.Drawing.Size(46, 13);
             this.lblDuvidas.TabIndex = 2;
@@ -66,7 +67,7 @@
             // lblAvisos
             // 
             this.lblAvisos.AutoSize = true;
-            this.lblAvisos.Location = new System.Drawing.Point(12, 144);
+            this.lblAvisos.Location = new System.Drawing.Point(12, 160);
             this.lblAvisos.Name = "lblAvisos";
             this.lblAvisos.Size = new System.Drawing.Size(38, 13);
             this.lblAvisos.TabIndex = 3;
@@ -75,7 +76,7 @@
             // lblModificarSenha
             // 
             this.lblModificarSenha.AutoSize = true;
-            this.lblModificarSenha.Location = new System.Drawing.Point(12, 217);
+            this.lblModificarSenha.Location = new System.Drawing.Point(12, 233);
             this.lblModificarSenha.Name = "lblModificarSenha";
             this.lblModificarSenha.Size = new System.Drawing.Size(84, 13);
             this.lblModificarSenha.TabIndex = 5;
@@ -84,17 +85,28 @@
             // lblJustificarFalta
             // 
             this.lblJustificarFalta.AutoSize = true;
-            this.lblJustificarFalta.Location = new System.Drawing.Point(12, 180);
+            this.lblJustificarFalta.Location = new System.Drawing.Point(12, 196);
             this.lblJustificarFalta.Name = "lblJustificarFalta";
             this.lblJustificarFalta.Size = new System.Drawing.Size(74, 13);
             this.lblJustificarFalta.TabIndex = 4;
             this.lblJustificarFalta.Text = "Justificar Falta";
+            // 
+            // lblSair
+            // 
+            this.lblSair.AutoSize = true;
+            this.lblSair.Location = new System.Drawing.Point(79, 9);
+            this.lblSair.Name = "lblSair";
+            this.lblSair.Size = new System.Drawing.Size(25, 13);
+            this.lblSair.TabIndex = 42;
+            this.lblSair.Text = "Sair";
+            this.lblSair.Click += new System.EventHandler(this.lblSair_Click);
             // 
             // frmInicialProfessores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(116, 264);
+            this.Controls.Add(this.lblSair);
             this.Controls.Add(this.lblModificarSenha);
             this.Controls.Add(this.lblJustificarFalta);
             this.Controls.Add(this.lblAvisos);
@@ -103,6 +115,7 @@
             this.Controls.Add(this.lblChamada);
             this.Name = "frmInicialProfessores";
             this.Text = "Início";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmInicialProfessores_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,5 +129,6 @@
         private System.Windows.Forms.Label lblAvisos;
         private System.Windows.Forms.Label lblModificarSenha;
         private System.Windows.Forms.Label lblJustificarFalta;
+        private System.Windows.Forms.Label lblSair;
     }
 }

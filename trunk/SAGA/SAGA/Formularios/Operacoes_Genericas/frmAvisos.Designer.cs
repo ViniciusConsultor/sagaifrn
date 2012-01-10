@@ -36,19 +36,20 @@
             this.btnEnviar = new System.Windows.Forms.Button();
             this.txtAviso = new System.Windows.Forms.TextBox();
             this.lblAviso = new System.Windows.Forms.Label();
+            this.lblSair = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ckblTurmas
             // 
             this.ckblTurmas.FormattingEnabled = true;
-            this.ckblTurmas.Location = new System.Drawing.Point(15, 311);
+            this.ckblTurmas.Location = new System.Drawing.Point(15, 357);
             this.ckblTurmas.Name = "ckblTurmas";
             this.ckblTurmas.Size = new System.Drawing.Size(342, 139);
             this.ckblTurmas.TabIndex = 15;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(78, 278);
+            this.dateTimePicker2.Location = new System.Drawing.Point(78, 324);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 14;
@@ -57,7 +58,7 @@
             // lblDataFInal
             // 
             this.lblDataFInal.AutoSize = true;
-            this.lblDataFInal.Location = new System.Drawing.Point(12, 284);
+            this.lblDataFInal.Location = new System.Drawing.Point(12, 330);
             this.lblDataFInal.Name = "lblDataFInal";
             this.lblDataFInal.Size = new System.Drawing.Size(55, 13);
             this.lblDataFInal.TabIndex = 13;
@@ -65,7 +66,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(78, 252);
+            this.dateTimePicker1.Location = new System.Drawing.Point(78, 298);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 12;
@@ -73,7 +74,7 @@
             // lblDataInicial
             // 
             this.lblDataInicial.AutoSize = true;
-            this.lblDataInicial.Location = new System.Drawing.Point(12, 258);
+            this.lblDataInicial.Location = new System.Drawing.Point(12, 304);
             this.lblDataInicial.Name = "lblDataInicial";
             this.lblDataInicial.Size = new System.Drawing.Size(60, 13);
             this.lblDataInicial.TabIndex = 11;
@@ -81,7 +82,7 @@
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(313, 4);
+            this.btnEnviar.Location = new System.Drawing.Point(313, 50);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(75, 23);
             this.btnEnviar.TabIndex = 10;
@@ -90,7 +91,7 @@
             // 
             // txtAviso
             // 
-            this.txtAviso.Location = new System.Drawing.Point(15, 33);
+            this.txtAviso.Location = new System.Drawing.Point(15, 79);
             this.txtAviso.MaxLength = 1024;
             this.txtAviso.Multiline = true;
             this.txtAviso.Name = "txtAviso";
@@ -100,17 +101,28 @@
             // lblAviso
             // 
             this.lblAviso.AutoSize = true;
-            this.lblAviso.Location = new System.Drawing.Point(12, 9);
+            this.lblAviso.Location = new System.Drawing.Point(12, 55);
             this.lblAviso.Name = "lblAviso";
             this.lblAviso.Size = new System.Drawing.Size(33, 13);
             this.lblAviso.TabIndex = 8;
             this.lblAviso.Text = "Aviso";
             // 
+            // lblSair
+            // 
+            this.lblSair.AutoSize = true;
+            this.lblSair.Location = new System.Drawing.Point(369, 9);
+            this.lblSair.Name = "lblSair";
+            this.lblSair.Size = new System.Drawing.Size(25, 13);
+            this.lblSair.TabIndex = 41;
+            this.lblSair.Text = "Sair";
+            this.lblSair.Click += new System.EventHandler(this.lblSair_Click);
+            // 
             // frmAvisos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(406, 460);
+            this.ClientSize = new System.Drawing.Size(406, 505);
+            this.Controls.Add(this.lblSair);
             this.Controls.Add(this.ckblTurmas);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.lblDataFInal);
@@ -121,6 +133,7 @@
             this.Controls.Add(this.lblAviso);
             this.Name = "frmAvisos";
             this.Text = "frmAvisos";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAvisos_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,6 +149,7 @@
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.TextBox txtAviso;
         private System.Windows.Forms.Label lblAviso;
+        private System.Windows.Forms.Label lblSair;
 
     }
 }

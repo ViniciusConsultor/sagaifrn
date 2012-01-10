@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Banco\SagaDataContext.cs" />
     <Compile Include="Banco\TipoUsuarioBanco.cs" />
     <Compile Include="Banco\UsuarioBanco.cs" />
     <Compile Include="Entidades\Alunos.cs" />

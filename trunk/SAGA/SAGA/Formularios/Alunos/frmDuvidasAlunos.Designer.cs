@@ -38,6 +38,8 @@
             this.btnEnviar = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblSair = new System.Windows.Forms.Label();
+            this.lblPaginaInicial = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabRespostas.SuspendLayout();
             this.tabDuvidas.SuspendLayout();
@@ -47,7 +49,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabRespostas);
             this.tabControl1.Controls.Add(this.tabDuvidas);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Location = new System.Drawing.Point(12, 35);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(768, 472);
@@ -140,11 +142,33 @@
             this.textBox1.Size = new System.Drawing.Size(391, 231);
             this.textBox1.TabIndex = 0;
             // 
+            // lblSair
+            // 
+            this.lblSair.AutoSize = true;
+            this.lblSair.Location = new System.Drawing.Point(758, 9);
+            this.lblSair.Name = "lblSair";
+            this.lblSair.Size = new System.Drawing.Size(25, 13);
+            this.lblSair.TabIndex = 40;
+            this.lblSair.Text = "Sair";
+            this.lblSair.Click += new System.EventHandler(this.lblSair_Click);
+            // 
+            // lblPaginaInicial
+            // 
+            this.lblPaginaInicial.AutoSize = true;
+            this.lblPaginaInicial.Location = new System.Drawing.Point(682, 9);
+            this.lblPaginaInicial.Name = "lblPaginaInicial";
+            this.lblPaginaInicial.Size = new System.Drawing.Size(70, 13);
+            this.lblPaginaInicial.TabIndex = 44;
+            this.lblPaginaInicial.Text = "Página Inicial";
+            this.lblPaginaInicial.Click += new System.EventHandler(this.lblPaginaInicial_Click);
+            // 
             // frmDuvidasAlunos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(795, 506);
+            this.ClientSize = new System.Drawing.Size(795, 526);
+            this.Controls.Add(this.lblPaginaInicial);
+            this.Controls.Add(this.lblSair);
             this.Controls.Add(this.tabControl1);
             this.Name = "frmDuvidasAlunos";
             this.Text = "Dúvidas";
@@ -154,6 +178,7 @@
             this.tabDuvidas.ResumeLayout(false);
             this.tabDuvidas.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -169,5 +194,7 @@
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblSair;
+        private System.Windows.Forms.Label lblPaginaInicial;
     }
 }

@@ -38,6 +38,8 @@
             this.faltas3ºBimestre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quartoBimestre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.faltas4ºBimestre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblSair = new System.Windows.Forms.Label();
+            this.lblPaginaInicial = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdBoletim)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,9 +56,9 @@
             this.faltas3ºBimestre,
             this.quartoBimestre,
             this.faltas4ºBimestre});
-            this.grdBoletim.Location = new System.Drawing.Point(22, 12);
+            this.grdBoletim.Location = new System.Drawing.Point(22, 54);
             this.grdBoletim.Name = "grdBoletim";
-            this.grdBoletim.Size = new System.Drawing.Size(758, 355);
+            this.grdBoletim.Size = new System.Drawing.Size(950, 355);
             this.grdBoletim.TabIndex = 0;
             // 
             // materias
@@ -104,16 +106,39 @@
             this.faltas4ºBimestre.HeaderText = "Faltas 4º Bimestre";
             this.faltas4ºBimestre.Name = "faltas4ºBimestre";
             // 
+            // lblSair
+            // 
+            this.lblSair.AutoSize = true;
+            this.lblSair.Location = new System.Drawing.Point(952, 9);
+            this.lblSair.Name = "lblSair";
+            this.lblSair.Size = new System.Drawing.Size(25, 13);
+            this.lblSair.TabIndex = 40;
+            this.lblSair.Text = "Sair";
+            this.lblSair.Click += new System.EventHandler(this.lblSair_Click);
+            // 
+            // lblPaginaInicial
+            // 
+            this.lblPaginaInicial.AutoSize = true;
+            this.lblPaginaInicial.Location = new System.Drawing.Point(876, 9);
+            this.lblPaginaInicial.Name = "lblPaginaInicial";
+            this.lblPaginaInicial.Size = new System.Drawing.Size(70, 13);
+            this.lblPaginaInicial.TabIndex = 44;
+            this.lblPaginaInicial.Text = "Página Inicial";
+            this.lblPaginaInicial.Click += new System.EventHandler(this.lblPaginaInicial_Click);
+            // 
             // frmBoletim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 395);
+            this.ClientSize = new System.Drawing.Size(989, 447);
+            this.Controls.Add(this.lblPaginaInicial);
+            this.Controls.Add(this.lblSair);
             this.Controls.Add(this.grdBoletim);
             this.Name = "frmBoletim";
             this.Text = "Boletim";
             ((System.ComponentModel.ISupportInitialize)(this.grdBoletim)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -129,5 +154,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn faltas3ºBimestre;
         private System.Windows.Forms.DataGridViewTextBoxColumn quartoBimestre;
         private System.Windows.Forms.DataGridViewTextBoxColumn faltas4ºBimestre;
+        private System.Windows.Forms.Label lblSair;
+        private System.Windows.Forms.Label lblPaginaInicial;
     }
 }

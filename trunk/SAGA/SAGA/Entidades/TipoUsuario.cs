@@ -8,6 +8,7 @@ namespace SAGA.Entidades
     class TipoUsuario
     {
         private int idTipoUsuario;
+        public static int tipoUsuario;
 
         public int IdTipoUsuario
         {
