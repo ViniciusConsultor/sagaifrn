@@ -119,7 +119,6 @@
             this.Controls.Add(this.btnModificar);
             this.Name = "frmAlterarSenha";
             this.Text = "frmAlterarSenha";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAlterarSenha_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

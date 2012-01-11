@@ -11,35 +11,41 @@ namespace SAGA.Banco
 {
     class UsuarioBanco
     {
-        private SqlConnection conexao = new SqlConnection("Data Source = localhost; Initial Catalog = SAGA; Integrated Security = SSPI;");
-        private SqlDataAdapter adaptador;
-        private DataSet ds = new DataSet();
+        private SagaDataContext sagaCtx = new SagaDataContext();
+        private Usuarios usuario = new Usuarios();
+        private TipoUsuario tipoUsuario = new TipoUsuario();
 
-        public void LogIn(string usuario, string senha)
+        public int LogIn(string _usuario, string senha)
         {
-            string strComando = "select u.IdUsuario from Usuarios u where @Senha = u.Senha and @NomeUsuario = u.NomeUsuario";
-            SqlCommand comando = new SqlCommand(strComando, conexao);
-            adaptador.SelectCommand = comando;
-            adaptador.SelectCommand.Parameters.Add("@Senha", SqlDbType.VarChar, 16, senha);
-            adaptador.SelectCommand.Parameters.Add("@NomeUsuario", SqlDbType.VarChar, 30, usuario);
-
             try
             {
-                adaptador.Fill(ds, "Usuario");
-                if (ds != null)
-                {
-                    DataRow linha = ds.Tables["Usuario"].NewRow();
-                    Usuarios.usuario = Convert.ToInt32(linha["IdUsuario"]);
-                    MessageBox.Show(Usuarios.usuario.ToString());
-                }
-                else
-                {
-                    MessageBox.Show("O nome de usuário ou senha estão incorretos.");
-                }
+                var logIn = from id in sagaCtx.Usuario
+                            where _usuario == usuario.NomeUsuario
+                             && senha == usuario.Senha
+                            select id;
+
+                //Usuarios.usuario = Convert.ToInt32(logIn);
+                return Convert.ToInt32(logIn) ;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.Message);
+                return -1;
+            }
+        }
+
+        public static int GetTipoUsuario(int idUsuario)
+        {
+            try
+            {
+                var tipo = from t in sagaCtx.TipoUsuario
+                           where idUsuario == usuario.IdUsuario && Convert.ToInt32(usuario.IdTipoUsuario) == tipoUsuario.IdTipoUsuario
+                           select t;
+
+                return Convert.ToInt32(tipo);
+            }
+            catch (Exception)
+            {
+                return -1;
             }
         }
     }

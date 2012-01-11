@@ -15,13 +15,13 @@ namespace SAGA.Entidades
         [Column(Name = "IdTurma", CanBeNull = false, IsPrimaryKey=true)]
         private Turmas idTurma;
 
-        internal Turmas IdTurma
+        public Turmas IdTurma
         {
             get { return idTurma; }
             set { idTurma = value; }
         }
 
-        internal Avisos IdAviso
+        public Avisos IdAviso
         {
             get { return idAviso; }
             set { idAviso = value; }

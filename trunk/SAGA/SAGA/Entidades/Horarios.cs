@@ -39,13 +39,13 @@ namespace SAGA.Entidades
             set { numeroHorario = value; }
         }
 
-        internal Disciplinas IdDisciplina
+        public Disciplinas IdDisciplina
         {
             get { return idDisciplina; }
             set { idDisciplina = value; }
         }
 
-        internal Turmas IdTurma
+        public Turmas IdTurma
         {
             get { return idTurma; }
             set { idTurma = value; }

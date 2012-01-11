@@ -6,7 +6,7 @@ using SAGA.Entidades;
 using System.Data.Linq;
 using System.Data.Linq.Mapping;
 
-namespace WindowsFormsApplication1
+namespace SAGA.Entidades
 {
     [Table(Name="Faltas")]
     class Faltas
