@@ -82,6 +82,7 @@
             this.Controls.Add(this.txtAviso);
             this.Name = "frmAvisosAlunos";
             this.Text = "Avisos";
+            this.Load += new System.EventHandler(this.frmAvisosAlunos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

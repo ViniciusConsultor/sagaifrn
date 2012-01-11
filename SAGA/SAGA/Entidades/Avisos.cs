@@ -29,7 +29,7 @@ namespace SAGA.Entidades
             set { textoAviso = value; }
         }
 
-        internal Professores IdProfessor
+        public Professores IdProfessor
         {
             get { return idProfessor; }
             set { idProfessor = value; }

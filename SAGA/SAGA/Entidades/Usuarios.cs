@@ -2,17 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data.Linq;
+using System.Data.Linq.Mapping;
 
 namespace SAGA.Entidades
 {
+    [Table(Name = "Usuarios")]
     class Usuarios
     {
+        [Column(Name = "IdUsuario", CanBeNull = false, IsPrimaryKey = true)]
         private int idUsuario;
-        private string senha, nomeUsuario;
+        [Column(Name = "Senha", CanBeNull = false)]
+        private string senha;
+        [Column(Name = "NomeUsuario", CanBeNull = false)]
+        private string nomeUsuario;
+        [Column(Name = "IdTipoUsuario", CanBeNull = false)]
         private TipoUsuario idTipoUsuario;
+        [Column(Name = "Usuario", CanBeNull = false)]
         public static int usuario;
 
-        internal TipoUsuario IdTipoUsuario
+        public TipoUsuario IdTipoUsuario
         {
             get { return idTipoUsuario; }
             set { idTipoUsuario = value; }

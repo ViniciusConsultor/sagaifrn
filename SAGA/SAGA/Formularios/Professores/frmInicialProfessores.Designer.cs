@@ -115,7 +115,6 @@
             this.Controls.Add(this.lblChamada);
             this.Name = "frmInicialProfessores";
             this.Text = "Início";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmInicialProfessores_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

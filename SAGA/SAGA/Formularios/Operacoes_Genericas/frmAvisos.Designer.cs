@@ -133,7 +133,6 @@
             this.Controls.Add(this.lblAviso);
             this.Name = "frmAvisos";
             this.Text = "frmAvisos";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAvisos_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
