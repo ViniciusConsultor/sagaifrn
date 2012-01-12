@@ -83,3 +83,4 @@ C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\o
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Documents and Settings\200914010045\Meus documentos\Nova pasta\SAGA\SAGA\bin\Debug\SAGA.exe.config
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\bin\Debug\SAGA.exe.config
