@@ -6,20 +6,20 @@ using SAGA.Entidades;
 
 namespace SAGA.Banco
 {
-    class NotasBanco
+    class FaltasBanco
     {
         private SagaDataContext sagaCtx = new SagaDataContext();
-        private Notas nota = new Notas();
+        private Faltas falta = new Faltas();
 
-        public IEnumerable<Notas> GetNotas(int idAluno)
+        public IEnumerable<Faltas> GetFaltas(int idAluno)
         {
             try
             {
-                
-            var _notas = from _nota in sagaCtx.Nota
-                         where idAluno == Convert.ToInt32(nota.IdAluno)
-                         select _nota;
-            return _notas;
+                var faltas = from _falta in sagaCtx.Falta
+                             where idAluno == Convert.ToInt32(falta.IdAlunos)
+                             select _falta;
+
+                return faltas;
             }
             catch (Exception)
             {

@@ -49,6 +49,9 @@
   <ItemGroup>
     <Compile Include="Banco\AvisosBanco.cs" />
     <Compile Include="Banco\DisciplinasBanco.cs" />
+    <Compile Include="Banco\DuvidasBanco.cs" />
+    <Compile Include="Banco\FaltasBanco.cs" />
+    <Compile Include="Banco\HorariosBanco.cs" />
     <Compile Include="Banco\NotasBanco.cs" />
     <Compile Include="Banco\SagaDataContext.cs" />
     <Compile Include="Banco\TurmasBanco.cs" />

@@ -136,6 +136,7 @@
             this.Controls.Add(this.grdBoletim);
             this.Name = "frmBoletim";
             this.Text = "Boletim";
+            this.Load += new System.EventHandler(this.frmBoletim_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdBoletim)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
