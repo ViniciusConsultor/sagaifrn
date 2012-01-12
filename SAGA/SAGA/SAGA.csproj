@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Banco\AlunosBanco.cs" />
     <Compile Include="Banco\AvisosBanco.cs" />
     <Compile Include="Banco\DisciplinasBanco.cs" />
     <Compile Include="Banco\DuvidasBanco.cs" />
