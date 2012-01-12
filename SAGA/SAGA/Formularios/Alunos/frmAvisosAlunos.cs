@@ -33,12 +33,12 @@ namespace SAGA.Formularios.Alunos
         private void frmAvisosAlunos_Load(object sender, EventArgs e)
         {
             AvisosBanco avisosBanco = new AvisosBanco();
-            List<Avisos> avisos = new List<Avisos>();
+            IEnumerable<Avisos> avisos = new List<Avisos>();
             TurmasBanco turma = new TurmasBanco();
 
-            avisos = avisosBanco.GetAvisos(turma.GetTurma(Usuarios.usuario));
+            avisos = avisosBanco.GetAvisos(turma.GetTurmaAluno(Usuarios.usuario));
 
-            //não sei como escolher o tipo de item da lista "avisos"
+            lsvAviso.
         }
     }
 }

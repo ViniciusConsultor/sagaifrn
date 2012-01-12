@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using SAGA.Entidades;
+using SAGA.Banco;
 
 namespace SAGA.Formularios.Alunos
 {
@@ -27,6 +28,14 @@ namespace SAGA.Formularios.Alunos
         {
             Formularios.frmAluno.Show();
             this.Close();
+        }
+
+        private FaltasBanco faltas = new FaltasBanco();
+        private NotasBanco notas = new NotasBanco();
+
+        private void frmBoletim_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

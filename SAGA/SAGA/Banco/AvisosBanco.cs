@@ -12,27 +12,25 @@ namespace SAGA.Banco
         private Avisos avisos = new Avisos();
         private Avisos_Turmas avisos_turmas = new Avisos_Turmas();
 
-        public List<Avisos> GetAvisos(int idTurma)
+        public IEnumerable<Avisos> GetAvisos(int idTurma)
         {
-            List<Avisos> _avisos = new List<Avisos>();
-            List<object> dados = new List<object>();
             try
             {
                 var aviso = from av in sagaCtx.Aviso
                             where idTurma == Convert.ToInt32(avisos_turmas.IdTurma) && Convert.ToInt32(avisos_turmas.IdAviso) == avisos.IdAviso
                             select av;
 
-                _avisos.ToList().ForEach(
-                    _aviso =>
-                    {
-                        dados.Add(new
-                        {
-                            Assunto = _aviso.Assunto,
-                            TextoAviso = _aviso.TextoAviso,
-                        });
-                    });
+                //_avisos.ToList().ForEach(
+                    //_aviso =>
+                    //{
+                    //    dados.Add(new
+                    //    {
+                    //        Assunto = _aviso.Assunto,
+                    //        TextoAviso = _aviso.TextoAviso,
+                    //    });
+                    //});
 
-                return _avisos;
+                return aviso;
             }
             catch (Exception)
             {

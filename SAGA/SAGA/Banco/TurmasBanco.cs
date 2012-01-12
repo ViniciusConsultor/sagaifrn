@@ -12,7 +12,7 @@ namespace SAGA.Banco
         private Turmas turma = new Turmas();
         private Alunos aluno = new Alunos();
 
-        public int GetTurma(int idAluno)
+        public int GetTurmaAluno(int idAluno)
         {
             try
             {
@@ -25,6 +25,21 @@ namespace SAGA.Banco
             catch (Exception)
             {
                 return -1;
+            }
+        }
+        public IEnumerable<Turmas> GetTurmasProfessor(int idProfessor)
+        {
+            try
+            {
+                var turmas = from _turma in sagaCtx.Turma
+                             where idProfessor == Convert.ToInt32(turma.Turma)
+                             select _turma;
+
+                return turmas;
+            }
+            catch (Exception)
+            {
+                return null;
             }
         }
     }
