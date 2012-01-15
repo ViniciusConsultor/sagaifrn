@@ -68,6 +68,8 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.lblSair = new System.Windows.Forms.Label();
             this.lblPaginaInicial = new System.Windows.Forms.Label();
+            this.cbbTurno = new System.Windows.Forms.ComboBox();
+            this.lblTurno = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblSegundaFeira
@@ -360,6 +362,7 @@
             this.btnCadastrar.TabIndex = 38;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // lblSair
             // 
@@ -381,11 +384,34 @@
             this.lblPaginaInicial.Text = "Página Inicial";
             this.lblPaginaInicial.Click += new System.EventHandler(this.lblPaginaInicial_Click);
             // 
+            // cbbTurno
+            // 
+            this.cbbTurno.FormattingEnabled = true;
+            this.cbbTurno.Items.AddRange(new object[] {
+            "Matutino",
+            "Vespertino",
+            "Noturno"});
+            this.cbbTurno.Location = new System.Drawing.Point(287, 203);
+            this.cbbTurno.Name = "cbbTurno";
+            this.cbbTurno.Size = new System.Drawing.Size(121, 21);
+            this.cbbTurno.TabIndex = 45;
+            // 
+            // lblTurno
+            // 
+            this.lblTurno.AutoSize = true;
+            this.lblTurno.Location = new System.Drawing.Point(227, 206);
+            this.lblTurno.Name = "lblTurno";
+            this.lblTurno.Size = new System.Drawing.Size(35, 13);
+            this.lblTurno.TabIndex = 44;
+            this.lblTurno.Text = "Turno";
+            // 
             // frmCadastrarHorario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(667, 350);
+            this.Controls.Add(this.cbbTurno);
+            this.Controls.Add(this.lblTurno);
             this.Controls.Add(this.lblPaginaInicial);
             this.Controls.Add(this.lblSair);
             this.Controls.Add(this.btnCadastrar);
@@ -428,6 +454,7 @@
             this.Controls.Add(this.lblSegundaFeira);
             this.Name = "frmCadastrarHorario";
             this.Text = "Cadastrar Horário";
+            this.Load += new System.EventHandler(this.frmCadastrarHorario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -475,6 +502,8 @@
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label lblSair;
         private System.Windows.Forms.Label lblPaginaInicial;
+        private System.Windows.Forms.ComboBox cbbTurno;
+        private System.Windows.Forms.Label lblTurno;
 
     }
 }

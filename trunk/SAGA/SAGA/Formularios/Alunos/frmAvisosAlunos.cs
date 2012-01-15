@@ -32,13 +32,13 @@ namespace SAGA.Formularios.Alunos
 
         private void frmAvisosAlunos_Load(object sender, EventArgs e)
         {
-            AvisosBanco avisosBanco = new AvisosBanco();
-            IEnumerable<Avisos> avisos = new List<Avisos>();
-            TurmasBanco turma = new TurmasBanco();
+            //AvisosBanco avisosBanco = new AvisosBanco();
+            //IEnumerable<Avisos> avisos = new List<Avisos>();
+            //TurmasBanco turma = new TurmasBanco();
 
-            avisos = avisosBanco.GetAvisos(turma.GetTurmaAluno(Usuarios.usuario));
+            //avisos = avisosBanco.GetAvisos(turma.GetTurmaAluno(Usuarios.usuario));
 
-            lsvAviso.
+            //lsvAviso.
         }
     }
 }

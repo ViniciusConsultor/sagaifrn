@@ -57,6 +57,10 @@ C:\Users\Ipueira\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\bi
 C:\Users\Ipueira\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\bin\Debug\SAGA.pdb
 C:\Users\Ipueira\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\obj\x86\Debug\SAGA.exe
 C:\Users\Ipueira\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\obj\x86\Debug\SAGA.pdb
+C:\Documents and Settings\200914010045\Meus documentos\Nova pasta\SAGA\SAGA\bin\Debug\SAGA.exe.config
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\bin\Debug\SAGA.exe.config
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\bin\Debug\SAGA.exe
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\bin\Debug\SAGA.pdb
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmCadastrarHorario.resources
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmCadastrarTurma.resources
@@ -82,5 +86,5 @@ C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\o
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\obj\x86\Debug\SAGA.Properties.Resources.resources
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Documents and Settings\200914010045\Meus documentos\Nova pasta\SAGA\SAGA\bin\Debug\SAGA.exe.config
-C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\bin\Debug\SAGA.exe.config
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\obj\x86\Debug\SAGA.exe
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\obj\x86\Debug\SAGA.pdb

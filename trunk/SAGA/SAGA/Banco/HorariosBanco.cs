@@ -26,5 +26,79 @@ namespace SAGA.Banco
                 return null;
             }
         }
+        public void InsertHorario(string[,] horarios, Turmas idTurma, int turno)
+        {
+            DisciplinasBanco disciplinasBanco = new DisciplinasBanco();
+            for (int linha = 0; linha < 5; linha++)
+            {
+                for (int coluna = 0; coluna < 5; coluna++)
+                {
+                    
+                    horario.IdDisciplina = disciplinasBanco.GetIdDisciplina(horarios[linha,coluna]);
+
+                    switch (coluna)
+                    {
+                        case 0:
+                        {
+                            horario.DiaSemana = "Segunda";
+                            break;
+                        }
+                        case 1:
+                        {
+                            horario.DiaSemana = "Terça";
+                            break;
+                        }
+                        case 2:
+                        {
+                            horario.DiaSemana = "Quarta";
+                            break;
+                        }
+                        case 3:
+                        {
+                            horario.DiaSemana = "Quinta";
+                            break;
+                        }
+                        case 4:
+                        {
+                            horario.DiaSemana = "Sexta";
+                            break;
+                        }
+                    }
+                    switch (linha)
+                    {
+                        case 0:
+                        {
+                            horario.NumeroHorario = 1;
+                            break;
+                        }case 1:
+                        {
+                            horario.NumeroHorario = 2;
+                            break;
+                        }
+                        case 2:
+                        {
+                            horario.NumeroHorario = 3;
+                            break;
+                        }
+                        case 3:
+                        {
+                            horario.NumeroHorario = 4;
+                            break;
+                        }
+                        case 4:
+                        {
+                            horario.NumeroHorario = 5;
+                            break;
+                        }
+                    }
+
+
+                    horario.IdTurma = idTurma;
+                    horario.Turno = turno;
+
+                    sagaCtx.Horario.InsertOnSubmit(horario);
+                }
+            }
+        }
     }
 }

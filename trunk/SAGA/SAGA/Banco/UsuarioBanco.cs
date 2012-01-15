@@ -19,13 +19,16 @@ namespace SAGA.Banco
         {
             try
             {
-                var logIn = from id in sagaCtx.Usuario
-                            where _usuario == usuario.NomeUsuario
-                             && senha == usuario.Senha
-                            select id;
+                usuario = sagaCtx.Usuario.Single(user => user.NomeUsuario == _usuario && user.Senha == senha);
+
+                //var logIn = from id in sagaCtx.Usuario
+                //            where _usuario == usuario.NomeUsuario
+                //             && senha == usuario.Senha
+                //            select id;
 
                 //Usuarios.usuario = Convert.ToInt32(logIn);
-                return Convert.ToInt32(logIn) ;
+                //return Convert.ToInt32(logIn);
+                return Convert.ToInt32(usuario.IdUsuario);
             }
             catch (Exception)
             {
@@ -33,20 +36,38 @@ namespace SAGA.Banco
             }
         }
 
-        public static int GetTipoUsuario(int idUsuario)
+        public int GetTipoUsuario(int idUsuario)
         {
             try
             {
-                var tipo = from t in sagaCtx.TipoUsuario
-                           where idUsuario == usuario.IdUsuario && Convert.ToInt32(usuario.IdTipoUsuario) == tipoUsuario.IdTipoUsuario
-                           select t;
+                usuario = sagaCtx.Usuario.Single(userType => userType.IdUsuario == idUsuario);
+                return Convert.ToInt32(usuario.IdTipoUsuario);
+                //var tipo = from t in sagaCtx.TipoUsuario
+                //           where idUsuario == usuario.IdUsuario && Convert.ToInt32(usuario.IdTipoUsuario) == tipoUsuario.IdTipoUsuario
+                //           select t;
 
-                return Convert.ToInt32(tipo);
+                //return Convert.ToInt32(tipo);
             }
             catch (Exception)
             {
                 return -1;
             }
+        }
+        public void InsertUsuario(TipoUsuario tipo, string nome, string senha)
+        {
+            usuario.IdTipoUsuario = tipo;
+            usuario.NomeUsuario = nome;
+            usuario.Senha = senha;
+
+            sagaCtx.Usuario.InsertOnSubmit(usuario);
+        }
+        public void InsertAluno(TipoUsuario tipo, string nome, string senha, Turmas turma)
+        {
+            usuario.IdTipoUsuario = tipo;
+            usuario.NomeUsuario = nome;
+            usuario.Senha = senha;
+
+            sagaCtx.Usuario.InsertOnSubmit(usuario);
         }
     }
 }
