@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using SAGA.Entidades;
 using System.Text;
+using System.Windows.Forms;
 
 namespace SAGA.Banco
 {
@@ -40,6 +41,46 @@ namespace SAGA.Banco
             catch (Exception)
             {
                 return null;
+            }
+        }
+        public IEnumerable<Turmas> GetTurmas()
+        {
+            try
+            {
+                var turmas = from _turma in sagaCtx.Turma
+                             select _turma;
+
+                return turmas;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+        public int GetTurmasPorNome(string nomeTurma)
+        {
+            try
+            {
+                turma = sagaCtx.Turma.Single(_turma => _turma.NomeTurma == nomeTurma);
+
+                return turma.Turma;
+            }
+            catch (Exception)
+            {
+                return -1;
+            }
+        }
+
+        public void InserTurma(string nomeTurma)
+        {
+            try
+            {
+                turma.NomeTurma = nomeTurma;
+                sagaCtx.Turma.InsertOnSubmit(turma);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Erro ao adicionar a turma");
             }
         }
     }

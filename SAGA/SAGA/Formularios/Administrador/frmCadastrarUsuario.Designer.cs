@@ -73,10 +73,16 @@
             // cbbTipo
             // 
             this.cbbTipo.FormattingEnabled = true;
+            this.cbbTipo.Items.AddRange(new object[] {
+            "Aluno",
+            "Professor",
+            "Diretor",
+            "Administrador"});
             this.cbbTipo.Location = new System.Drawing.Point(110, 45);
             this.cbbTipo.Name = "cbbTipo";
             this.cbbTipo.Size = new System.Drawing.Size(121, 21);
             this.cbbTipo.TabIndex = 3;
+            this.cbbTipo.SelectedIndexChanged += new System.EventHandler(this.cbbTipo_SelectedIndexChanged);
             // 
             // btnCadastrar
             // 
@@ -86,6 +92,7 @@
             this.btnCadastrar.TabIndex = 4;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // txtNome
             // 
@@ -125,6 +132,7 @@
             this.cblTurmasProfessores.Name = "cblTurmasProfessores";
             this.cblTurmasProfessores.Size = new System.Drawing.Size(120, 94);
             this.cblTurmasProfessores.TabIndex = 9;
+            this.cblTurmasProfessores.Visible = false;
             // 
             // cbbTurmaAluno
             // 
@@ -133,6 +141,7 @@
             this.cbbTurmaAluno.Name = "cbbTurmaAluno";
             this.cbbTurmaAluno.Size = new System.Drawing.Size(121, 21);
             this.cbbTurmaAluno.TabIndex = 10;
+            this.cbbTurmaAluno.Visible = false;
             // 
             // lblSair
             // 
@@ -174,6 +183,7 @@
             this.Controls.Add(this.lblTipo);
             this.Name = "frmCadastrarUsuario";
             this.Text = "Cadastrar Usuário";
+            this.Load += new System.EventHandler(this.frmCadastrarUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

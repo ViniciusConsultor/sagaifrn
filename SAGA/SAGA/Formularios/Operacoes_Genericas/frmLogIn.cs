@@ -28,7 +28,7 @@ namespace SAGA.Formularios.Operacoes_Genericas
 
                 if (Usuarios.usuario > 0)
                 {
-                    TipoUsuario.tipoUsuario = UsuarioBanco.GetTipoUsuario(Usuarios.usuario);
+                    TipoUsuario.tipoUsuario = usuarioBanco.GetTipoUsuario(Usuarios.usuario);
 
                     switch (TipoUsuario.tipoUsuario)
                     {

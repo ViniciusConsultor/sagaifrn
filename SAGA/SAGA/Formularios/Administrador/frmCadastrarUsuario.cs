@@ -7,11 +7,15 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using SAGA.Banco;
 
 namespace SAGA.Formularios.Administrador
 {
     public partial class frmCadastrarUsuario : Form
     {
+
+        private UsuarioBanco usuarioBanco = new UsuarioBanco();
+
         public frmCadastrarUsuario()
         {
             InitializeComponent();
@@ -27,6 +31,47 @@ namespace SAGA.Formularios.Administrador
         {
             Formularios.frmAdministrador.Show();
             this.Close();
+        }
+
+        private void cbbTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (cbbTipo.Text)
+            {
+                case "Aluno":
+                {
+                    cbbTurmaAluno.Visible = true;
+                    cblTurmasProfessores.Visible = false;
+                    break;
+                }
+                case "Professor":
+                {
+                    cblTurmasProfessores.Visible = true;
+                    cbbTurmaAluno.Visible = false;
+                    break;
+                }
+                default:
+                {
+                    cbbTurmaAluno.Visible = cblTurmasProfessores.Visible = false;
+                    break;
+                }
+            }
+        }
+
+        private void frmCadastrarUsuario_Load(object sender, EventArgs e)
+        {
+            TurmasBanco turmasBanco = new TurmasBanco();
+            IEnumerable<Turmas> turmas = turmasBanco.GetTurmas();
+
+            foreach (var turma in turmas)
+            {
+                cblTurmasProfessores.Items.Add(turma);
+                cbbTurmaAluno.Items.Add(turma);
+            }
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            if 
         }
     }
 }

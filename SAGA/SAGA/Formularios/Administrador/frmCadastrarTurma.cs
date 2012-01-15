@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using SAGA.Entidades;
+using SAGA.Banco;
 
 namespace SAGA.Formularios.Administrador
 {
@@ -27,6 +28,20 @@ namespace SAGA.Formularios.Administrador
         {
             Formularios.frmAdministrador.Show();
             this.Close();
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            if (txtNomeTurma.Text != "")
+            {
+                TurmasBanco turmaBanco = new TurmasBanco();
+                turmaBanco.InserTurma(txtNomeTurma.Text);
+                txtNomeTurma.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Digite o nome da turma");
+            }
         }
     }
 }
