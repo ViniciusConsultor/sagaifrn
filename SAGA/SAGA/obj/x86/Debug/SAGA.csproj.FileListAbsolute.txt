@@ -90,3 +90,5 @@ C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\o
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\obj\x86\Debug\SAGA.pdb
 C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\bin\Debug\SAGA.exe.config
 C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.exe
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\Nova pasta\SAGA\SAGA\bin\Debug\SAGA.exe.config
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.exe
