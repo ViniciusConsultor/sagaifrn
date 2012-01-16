@@ -71,7 +71,27 @@ namespace SAGA.Formularios.Administrador
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            if 
+            TipoUsuario tipo = new TipoUsuario();
+            if (cbbTipo.Text != "" && txtNome.Text != "" && txtSenha.Text != "" && txtSenha.Text == txtSenha2.Text)
+            {
+                if (cbbTipo.Text == "Administrador" || cbbTipo.Text == "Diretor")
+                {
+                    switch (cbbTipo.Text)
+                    {
+                        case "Administrador":
+                        {
+                            tipo.IdTipoUsuario = 4;
+                            break;
+                        }
+                        case "Diretor":
+                        {
+                            tipo.IdTipoUsuario = 3;
+                            break;
+                        }
+                    }
+                }
+                usuarioBanco.InsertUsuario(tipo, txtNome.Text, txtSenha.Text);
+            }
         }
     }
 }
