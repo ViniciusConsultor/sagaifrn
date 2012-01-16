@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using SAGA.Entidades;
+using SAGA.Banco;
 
 namespace SAGA.Formularios.Administrador
 {
     public partial class frmModificarFalta : Form
     {
+        private FaltasBanco faltasBanco = new FaltasBanco();
         public frmModificarFalta()
         {
             InitializeComponent();
@@ -32,6 +34,18 @@ namespace SAGA.Formularios.Administrador
         {
             Formularios.frmAdministrador.Show();
             this.Close();
+        }
+
+        private void txtAluno_TextChanged(object sender, EventArgs e)
+        {
+            UsuarioBanco usuarioBanco = new UsuarioBanco();
+
+            int idAluno = usuarioBanco.GetAluno(txtAluno.Text);
+
+            if (idAluno>0)
+	        {
+                
+	        }
         }
     }
 }

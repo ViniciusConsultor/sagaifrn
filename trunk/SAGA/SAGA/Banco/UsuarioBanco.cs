@@ -69,5 +69,17 @@ namespace SAGA.Banco
 
             sagaCtx.Usuario.InsertOnSubmit(usuario);
         }
+        public int GetAluno(string nomeAluno)
+        {
+            try
+            {
+                usuario = sagaCtx.Usuario.Single(aluno => Convert.ToString(aluno.NomeUsuario) == nomeAluno && Convert.ToInt32(aluno.IdTipoUsuario) == 1);
+                return usuario.IdUsuario;
+            }
+            catch (Exception)
+            {
+                return -1;
+            }
+        }
     }
 }

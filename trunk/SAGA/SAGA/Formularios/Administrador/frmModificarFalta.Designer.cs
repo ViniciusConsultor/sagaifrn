@@ -84,6 +84,7 @@
             this.txtAluno.Name = "txtAluno";
             this.txtAluno.Size = new System.Drawing.Size(177, 20);
             this.txtAluno.TabIndex = 6;
+            this.txtAluno.TextChanged += new System.EventHandler(this.txtAluno_TextChanged);
             // 
             // dgvFalta
             // 
