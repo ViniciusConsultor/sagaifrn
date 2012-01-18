@@ -14,7 +14,9 @@ namespace SAGA.Entidades
         private Avisos idAviso;
         [Column(Name = "IdTurma", CanBeNull = false, IsPrimaryKey=true)]
         private Turmas idTurma;
-
+        private EntityRef<Avisos> aviso;
+        private EntityRef<Turmas> turma;
+        
         public Turmas IdTurma
         {
             get { return idTurma; }
@@ -25,6 +27,20 @@ namespace SAGA.Entidades
         {
             get { return idAviso; }
             set { idAviso = value; }
+        }
+
+        [Association(Storage = "aviso", ThisKey = "IdAviso", OtherKey = "IdAviso")]
+        public Avisos Aviso
+        {
+            get { return this.aviso.Entity; }
+            set { this.aviso.Entity = value; }
+        }
+
+        [Association(Storage = "turma", ThisKey = "IdTurma", OtherKey = "IdTurma")]
+        public Turmas Turma
+        {
+            get { return this.turma.Entity; }
+            set { this.turma.Entity = value; }
         }
     }
 }

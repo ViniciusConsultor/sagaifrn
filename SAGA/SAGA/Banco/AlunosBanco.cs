@@ -25,5 +25,14 @@ namespace SAGA.Banco
                 return null;
             }
         }
+        public void InsertAluno(int tipo, string nome, string senha, int turma)
+        {
+            aluno.Usuario.NomeUsuario = nome;
+            aluno.Usuario.Senha = senha;
+            aluno.Usuario.TipoUsuario.IdTipoUsuario = tipo;
+            aluno.Turma.Turma = turma;
+
+            sagaCtx.Aluno.InsertOnSubmit(aluno);
+        }
     }
 }

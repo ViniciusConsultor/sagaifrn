@@ -12,6 +12,14 @@ namespace SAGA.Entidades
     {
         [Column(Name = "IdProfessor", CanBeNull = false, IsPrimaryKey = true)]
         private Usuarios idProfessor;
+        private EntityRef<Usuarios> usuario;
+
+        [Association(Storage = "usuario", ThisKey = "IdProfessor", OtherKey = "IdUsuario")]
+        public Usuarios Usuario
+        {
+            get { return this.usuario.Entity; }
+            set { this.usuario.Entity = value; }
+        }
 
         public Usuarios IdProfessor
         {
