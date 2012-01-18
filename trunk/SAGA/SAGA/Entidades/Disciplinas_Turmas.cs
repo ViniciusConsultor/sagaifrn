@@ -17,7 +17,7 @@ namespace SAGA.Entidades
         private EntityRef<Disciplinas> disciplina;
         private EntityRef<Turmas> turma;
 
-        [Association(Storage = "Turma", ThisKey = "IdTurma", OtherKey = "IdTurma")]
+        [Association(Storage = "turma", ThisKey = "IdTurma", OtherKey = "IdTurma")]
         public Turmas Turma
         {
             get { return this.turma.Entity; }

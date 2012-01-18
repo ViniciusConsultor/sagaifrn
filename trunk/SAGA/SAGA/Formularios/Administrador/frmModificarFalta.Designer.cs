@@ -34,11 +34,11 @@
             this.cbbDisciplina = new System.Windows.Forms.ComboBox();
             this.txtAluno = new System.Windows.Forms.TextBox();
             this.dgvFalta = new System.Windows.Forms.DataGridView();
-            this.data = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qtdFalta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnModificar = new System.Windows.Forms.Button();
             this.lblSair = new System.Windows.Forms.Label();
             this.lblPaginaInicial = new System.Windows.Forms.Label();
+            this.qtdFalta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFalta)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,6 +77,7 @@
             this.cbbDisciplina.Name = "cbbDisciplina";
             this.cbbDisciplina.Size = new System.Drawing.Size(121, 21);
             this.cbbDisciplina.TabIndex = 5;
+            this.cbbDisciplina.SelectedIndexChanged += new System.EventHandler(this.cbbDisciplina_SelectedIndexChanged);
             // 
             // txtAluno
             // 
@@ -96,17 +97,6 @@
             this.dgvFalta.Name = "dgvFalta";
             this.dgvFalta.Size = new System.Drawing.Size(276, 75);
             this.dgvFalta.TabIndex = 7;
-            // 
-            // data
-            // 
-            this.data.HeaderText = "Data";
-            this.data.Name = "data";
-            // 
-            // qtdFalta
-            // 
-            this.qtdFalta.HeaderText = "Quantdade de Faltas";
-            this.qtdFalta.Name = "qtdFalta";
-            this.qtdFalta.Width = 130;
             // 
             // btnModificar
             // 
@@ -136,6 +126,17 @@
             this.lblPaginaInicial.TabIndex = 42;
             this.lblPaginaInicial.Text = "Página Inicial";
             this.lblPaginaInicial.Click += new System.EventHandler(this.lblPaginaInicial_Click);
+            // 
+            // qtdFalta
+            // 
+            this.qtdFalta.HeaderText = "Quantdade de Faltas";
+            this.qtdFalta.Name = "qtdFalta";
+            this.qtdFalta.Width = 130;
+            // 
+            // data
+            // 
+            this.data.HeaderText = "Data";
+            this.data.Name = "data";
             // 
             // frmModificarFalta
             // 
@@ -167,10 +168,10 @@
         private System.Windows.Forms.ComboBox cbbDisciplina;
         private System.Windows.Forms.TextBox txtAluno;
         private System.Windows.Forms.DataGridView dgvFalta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn data;
-        private System.Windows.Forms.DataGridViewTextBoxColumn qtdFalta;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Label lblSair;
         private System.Windows.Forms.Label lblPaginaInicial;
+        private System.Windows.Forms.DataGridViewTextBoxColumn data;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qtdFalta;
     }
 }

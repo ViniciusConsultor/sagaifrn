@@ -35,29 +35,68 @@ namespace SAGA.Formularios.Administrador
             Formularios.frmAdministrador.Show();
             this.Close();
         }
+        private UsuarioBanco usuarioBanco = new UsuarioBanco();
 
         private void txtAluno_TextChanged(object sender, EventArgs e)
         {
-            UsuarioBanco usuarioBanco = new UsuarioBanco();
+            TurmasBanco turmaBanco = new TurmasBanco();
+            Disciplinas_TurmasBanco dtBanco = new Disciplinas_TurmasBanco();
 
             int idAluno = usuarioBanco.GetAluno(txtAluno.Text);
+            if (idAluno > 0)
+            {
+                int turmaAluno = turmaBanco.GetTurmaAluno(idAluno);
+                if (turmaAluno > 0)
+                {
+                    IEnumerable<string> disciplinas = dtBanco.GetDisciplinasTurma(turmaAluno);
+                    if (disciplinas != null)
+                    {
+                        cbbDisciplina.Items.Add(disciplinas);                        
+                    }
+                    else
+                    {
+                        MessageBox.Show("Houve um erro durante a conexão com o banco");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Houve um erro durante a conexão com o banco");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Houve um erro durante a conexão com o banco");
+            }
+        }
 
-            //if (idAluno>0)
-            //{
-            //    List<Faltas> faltas = new List<Faltas>();
-            //    faltas = faltasBanco.GetFaltas(idAluno).ToList();
+        private void cbbDisciplina_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisciplinasBanco disciplinaBanco = new DisciplinasBanco();
 
-            //    foreach (var falta in faltas)
-            //    {
-            //        DataGridViewRow linha = new DataGridViewRow();
-            //        TextBox txt = new TextBox();
+            int idDisciplina = Convert.ToInt32(disciplinaBanco.GetIdDisciplina(cbbDisciplina.Text));
+            int idAluno = usuarioBanco.GetAluno(txtAluno.Text);
 
-            //        linha = new{
-            //            Data = falta.DataFalta,
-            //            QuantidadeFaltas = txt,
-            //        }
-            //    }
-            //}
+            IEnumerable<Faltas> faltas = faltasBanco.GetFaltas(idAluno, idDisciplina);
+
+            List<object> dados = new List<object>();
+
+            faltas.ToList().ForEach(
+                falta =>
+                {
+                    dados.Add(new
+                    {
+                        Quantidade = falta.Quatindade,
+                        Data = falta.DataFalta,
+                    });
+                });
+
+            foreach (var _falta in dados)
+            {
+                DataGridViewRow linha = new DataGridViewRow();
+                TextBox txt = new TextBox();
+
+                //txt.Text = _falta.Data;                
+            }
         }
     }
 }

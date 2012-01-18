@@ -19,6 +19,8 @@ namespace SAGA.Entidades
         private Disciplinas idDisciplina;
         [Column(Name = "Justificativa", CanBeNull = true)]
         private string justificativa;
+        [Column(Name = "Quantidade", CanBeNull = true)]
+        private int quatindade;
         private EntityRef<Alunos> aluno;
         private EntityRef<Disciplinas> disciplina;
 
@@ -63,6 +65,12 @@ namespace SAGA.Entidades
         {
             get { return idDisciplina; }
             set { idDisciplina = value; }
+        }
+
+        public int Quatindade
+        {
+            get { return quatindade; }
+            set { quatindade = value; }
         }
     }
 }
