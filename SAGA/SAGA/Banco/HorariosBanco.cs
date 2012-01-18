@@ -28,6 +28,7 @@ namespace SAGA.Banco
         }
         public void InsertHorario(string[,] horarios, Turmas idTurma, int turno)
         {
+            horarios = new string[5,5];
             DisciplinasBanco disciplinasBanco = new DisciplinasBanco();
             for (int linha = 0; linha < 5; linha++)
             {
@@ -99,6 +100,10 @@ namespace SAGA.Banco
                     sagaCtx.Horario.InsertOnSubmit(horario);
                 }
             }
+        }
+        public void ModifyHorario(string[,] horarios, Turmas idTurma, int turno)
+        {
+
         }
     }
 }

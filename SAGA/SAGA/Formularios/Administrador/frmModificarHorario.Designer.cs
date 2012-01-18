@@ -86,6 +86,7 @@
             this.cbbTurma.Name = "cbbTurma";
             this.cbbTurma.Size = new System.Drawing.Size(121, 21);
             this.cbbTurma.TabIndex = 75;
+            this.cbbTurma.SelectedIndexChanged += new System.EventHandler(this.cbbTurma_SelectedIndexChanged);
             // 
             // lblTurma
             // 
@@ -428,6 +429,7 @@
             this.Controls.Add(this.lblSegundaFeira);
             this.Name = "frmModificarHorario";
             this.Text = "Modificar Horário";
+            this.Load += new System.EventHandler(this.frmModificarHorario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
