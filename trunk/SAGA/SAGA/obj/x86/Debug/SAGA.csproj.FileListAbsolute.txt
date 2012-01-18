@@ -92,3 +92,28 @@ C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\bin\Debug\SA
 C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.exe
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\Nova pasta\SAGA\SAGA\bin\Debug\SAGA.exe.config
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.exe
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmCadastrarHorario.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmCadastrarTurma.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmCadastrarUsuario.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmInicialAdministrador.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmModificarFalta.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmModificarHorario.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmModificarNota.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmModificarUsuario.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Alunos.frmAvisosAlunos.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Alunos.frmBoletim.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Alunos.frmDuvidasAlunos.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Alunos.frmHorarios.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Alunos.frmInicialAlunos.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Operacoes_Genericas.frmAlterarSenha.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Operacoes_Genericas.frmAvisos.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Operacoes_Genericas.frmLogIn.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Professores.frmChamada.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Professores.frmDuvidasProfessores.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Professores.frmInicialProfessores.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Professores.frmJustificarFalta.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Professores.frmNotas.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.Properties.Resources.resources
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\GenerateResource.write.1.tlog

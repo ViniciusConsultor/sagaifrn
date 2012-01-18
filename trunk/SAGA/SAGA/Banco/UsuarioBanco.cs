@@ -61,14 +61,6 @@ namespace SAGA.Banco
 
             sagaCtx.Usuario.InsertOnSubmit(usuario);
         }
-        public void InsertAluno(TipoUsuario tipo, string nome, string senha, Turmas turma)
-        {
-            usuario.IdTipoUsuario = tipo;
-            usuario.NomeUsuario = nome;
-            usuario.Senha = senha;
-
-            sagaCtx.Usuario.InsertOnSubmit(usuario);
-        }
         public int GetAluno(string nomeAluno)
         {
             try

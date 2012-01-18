@@ -20,6 +20,22 @@ namespace SAGA.Entidades
         private Disciplinas idDisciplina;
         [Column(Name = "IdTurma", CanBeNull = false)]
         private Turmas idTurma;
+        private EntityRef<Disciplinas> disciplina;
+        private EntityRef<Turmas> turma;
+
+        [Association(Storage = "turma", ThisKey = "IdTurma", OtherKey = "IdTurma")]
+        public Turmas Turma
+        {
+            get { return this.turma.Entity; }
+            set { this.turma.Entity = value; }
+        }
+            
+        [Association(Storage = "disciplina", ThisKey = "IdDisciplina", OtherKey = "IdDisciplina")]
+        public Disciplinas Disciplina
+        {
+            get { return this.disciplina.Entity; }
+            set { this.disciplina.Entity = value; }
+        }
 
         public int Turno
         {

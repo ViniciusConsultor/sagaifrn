@@ -72,25 +72,78 @@ namespace SAGA.Formularios.Administrador
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             TipoUsuario tipo = new TipoUsuario();
+            AlunosBanco alunoBanco = new AlunosBanco();
+            TurmasBanco turmaBanco = new TurmasBanco();
             if (cbbTipo.Text != "" && txtNome.Text != "" && txtSenha.Text != "" && txtSenha.Text == txtSenha2.Text)
             {
-                if (cbbTipo.Text == "Administrador" || cbbTipo.Text == "Diretor")
+                if (cbbTipo.Text == "Aluno")
                 {
-                    switch (cbbTipo.Text)
+                    if (cbbTurmaAluno.Text != "")
+                    {                        
+                        alunoBanco.InsertAluno(1, txtNome.Text, txtSenha.Text, turmaBanco.GetTurmasPorNome(cbbTurmaAluno.Text));
+                    }
+                    else
                     {
-                        case "Administrador":
-                        {
-                            tipo.IdTipoUsuario = 4;
-                            break;
-                        }
-                        case "Diretor":
-                        {
-                            tipo.IdTipoUsuario = 3;
-                            break;
-                        }
+                        MessageBox.Show("Selecione uma turma para o aluno");
                     }
                 }
-                usuarioBanco.InsertUsuario(tipo, txtNome.Text, txtSenha.Text);
+                else
+                {
+                    if (cbbTipo.Text == "Professor")
+                    {
+                        //FALTA CRIAR O MÉTODO
+                    }
+                    else
+                    {
+                        switch (cbbTipo.Text)
+                        {
+                            case "Administrador":
+                            {
+                                tipo.IdTipoUsuario = 4;
+                                break;
+                            }
+                            case "Diretor":
+                            {
+                                tipo.IdTipoUsuario = 3;
+                                break;
+                            }
+                        }
+                        usuarioBanco.InsertUsuario(tipo, txtNome.Text, txtSenha.Text);
+                    }
+                }
+                if (cbbTipo.Text == "Administrador" || cbbTipo.Text == "Diretor")
+                {
+                    
+                    
+                }
+            }
+            else
+            {
+                string mensagem = "";
+                if (cbbTipo.Text == "")
+                {
+                    mensagem += "Você precisa selecionar o tipo do usuário";
+                }
+                if (txtNome.Text == "")
+                {
+                    mensagem += "\nVocê precisa digitar o nome do usuário";
+                }
+                if (txtSenha.Text == "")
+                {
+                    mensagem += "\nVocê precisa digitar a senha do usuário";
+                }
+                if (txtSenha2.Text == "")
+                {
+                    mensagem += "\nRedigite a senha para garantir que a mesma esteja certa";
+                }
+                else
+                {
+                    if (txtSenha2.Text != txtSenha.Text)
+                    {
+                        mensagem += "\nAs senhas não coincidem";
+                    }
+                }
+                MessageBox.Show(mensagem);
             }
         }
     }

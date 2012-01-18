@@ -42,10 +42,22 @@ namespace SAGA.Formularios.Administrador
 
             int idAluno = usuarioBanco.GetAluno(txtAluno.Text);
 
-            if (idAluno>0)
-	        {
-                
-	        }
+            //if (idAluno>0)
+            //{
+            //    List<Faltas> faltas = new List<Faltas>();
+            //    faltas = faltasBanco.GetFaltas(idAluno).ToList();
+
+            //    foreach (var falta in faltas)
+            //    {
+            //        DataGridViewRow linha = new DataGridViewRow();
+            //        TextBox txt = new TextBox();
+
+            //        linha = new{
+            //            Data = falta.DataFalta,
+            //            QuantidadeFaltas = txt,
+            //        }
+            //    }
+            //}
         }
     }
 }

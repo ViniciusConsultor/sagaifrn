@@ -22,6 +22,22 @@ namespace SAGA.Entidades
         private string resposta;
         [Column(Name = "Assunto", CanBeNull = false)]
         private string assunto;
+        private EntityRef<Alunos> aluno;
+        private EntityRef<Professores> professor;
+
+        [Association(Storage = "professor", ThisKey = "IdProfessor", OtherKey = "IdProfessor")]
+        public Professores Professor
+        {
+            get { return this.professor.Entity; }
+            set { this.professor.Entity = value; }
+        }
+
+        [Association(Storage = "aluno", ThisKey = "IdAluno", OtherKey = "IdAluno")]
+        public Alunos Aluno
+        {
+            get { return this.aluno.Entity; }
+            set { this.aluno.Entity = value; }
+        }
 
         public int IdDuvida
         {

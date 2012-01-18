@@ -14,6 +14,22 @@ namespace SAGA.Entidades
         private Usuarios idAluno;
         [Column(Name = "IdTurma", CanBeNull = false, IsPrimaryKey=true)]
         private Turmas idTurma;
+        private EntityRef<Usuarios> usuario;
+        private EntityRef<Turmas> turma;
+
+        [Association(Storage = "usuario", ThisKey = "IdAluno", OtherKey = "IdUsuario")]
+        public Usuarios Usuario
+        {
+            get { return this.usuario.Entity; }
+            set { this.usuario.Entity = value; }
+        }
+
+        [Association(Storage = "turma", ThisKey = "IdTurma", OtherKey = "IdTurma")]
+        public Turmas Turma
+        {
+            get { return this.turma.Entity; }
+            set { this.turma.Entity = value; }
+        }
 
         public Turmas IdTurma
         {

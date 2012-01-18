@@ -19,6 +19,22 @@ namespace SAGA.Entidades
         private Disciplinas idDisciplina;
         [Column(Name = "Justificativa", CanBeNull = true)]
         private string justificativa;
+        private EntityRef<Alunos> aluno;
+        private EntityRef<Disciplinas> disciplina;
+
+        [Association(Storage = "disciplina", ThisKey = "IdDisciplina", OtherKey = "IdDisciplina")]
+        public Disciplinas Disciplina
+        {
+            get { return this.disciplina.Entity; }
+            set { this.disciplina.Entity = value; }
+        }
+
+        [Association(Storage = "aluno", ThisKey = "IdAluno", OtherKey = "IdAluno")]
+        public Alunos Aluno
+        {
+            get { return this.aluno.Entity; }
+            set { this.aluno.Entity = value; }
+        }
 
         public Alunos IdAlunos
         {

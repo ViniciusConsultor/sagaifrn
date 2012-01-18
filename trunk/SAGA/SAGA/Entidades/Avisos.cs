@@ -16,12 +16,20 @@ namespace SAGA.Entidades
         private DateTime dataPublicacao;
         [Column(Name = "DataExpiro")]
         private DateTime dataExpiro;
-        [Column(Name = "IdProfessor", CanBeNull=false)]
+        [Column(Name = "IdProfessor")]
         private Professores idProfessor;
         [Column(Name = "TextAviso", CanBeNull = false)]
         private string textoAviso;
         [Column(Name = "Assunto")]
         private string assunto;
+        private EntityRef<Professores> professor;
+
+        [Association(Storage = "professor", ThisKey = "IdProfessor", OtherKey = "IdProfessor")]
+        public Professores Professor
+        {
+            get { return this.professor.Entity; }
+            set { this.professor.Entity = value; }
+        }
 
         public string TextoAviso
         {

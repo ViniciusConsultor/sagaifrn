@@ -11,12 +11,12 @@ namespace SAGA.Banco
         private SagaDataContext sagaCtx = new SagaDataContext();
         private Faltas falta = new Faltas();
 
-        public IEnumerable<Faltas> GetFaltas(int idAluno)
+        public IEnumerable<Faltas> GetFaltas(int idAluno, int idDisciplina)
         {
             try
             {
                 var faltas = from _falta in sagaCtx.Falta
-                             where idAluno == Convert.ToInt32(falta.IdAlunos)
+                             where idAluno == Convert.ToInt32(falta.IdAlunos) && idDisciplina == falta.Disciplina.IdDisciplina
                              select _falta;
 
                 return faltas;
