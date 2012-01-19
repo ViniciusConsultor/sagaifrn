@@ -119,3 +119,12 @@ Turno int not null,
 constraint FK_Horarios_Disciplinas foreign key (IdDisciplina) references Disciplinas,
 constraint FK_Horarios_Turmas foreign key (IdTurma) references Turmas,
 );
+
+insert into TipoUsuario values(1)
+insert into TipoUsuario values(2)
+insert into TipoUsuario values(3)
+insert into TipoUsuario values(4)
+insert into Usuarios(Senha, NomeUsuario, IdTipoUsuario) values (1234, 'savyo', 1)
+insert into Usuarios(Senha, NomeUsuario, IdTipoUsuario) values (1234, 'mackson', 2)
+insert into Usuarios(Senha, NomeUsuario, IdTipoUsuario) values (1234, 'myller', 3)
+insert into Usuarios(Senha, NomeUsuario, IdTipoUsuario) values (1234, 'admin', 4)
