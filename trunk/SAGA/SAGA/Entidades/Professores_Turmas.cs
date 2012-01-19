@@ -11,9 +11,9 @@ namespace SAGA.Entidades
     class Professores_Turmas
     {
         [Column(Name = "IdTurma", CanBeNull = false, IsPrimaryKey = true)]
-        private Turmas idTurma;
+        private int idTurma;
         [Column(Name = "idProfessor", CanBeNull = false, IsPrimaryKey = true)]
-        private Professores idProfessor;
+        private int idProfessor;
         private EntityRef<Turmas> turma;
         private EntityRef<Professores> professor;
 
@@ -24,20 +24,20 @@ namespace SAGA.Entidades
             set { this.professor.Entity = value; }
         }
 
-        [Association(Storage = "turma", ThisKey = "IdTurma", OtherKey = "IdTurma")]
+        [Association(Storage = "turma", ThisKey = "idTurma", OtherKey = "turma")]
         public Turmas Turma
         {
             get { return this.turma.Entity; }
             set { this.turma.Entity = value; }
         }
 
-        public Professores IdProfessor
+        public int IdProfessor
         {
             get { return idProfessor; }
             set { idProfessor = value; }
         }
 
-        public Turmas IdTurma
+        public int IdTurma
         {
             get { return idTurma; }
             set { idTurma = value; }

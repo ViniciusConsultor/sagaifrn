@@ -17,7 +17,7 @@ namespace SAGA.Entidades
         [Column(Name = "DataExpiro")]
         private DateTime dataExpiro;
         [Column(Name = "IdProfessor")]
-        private Professores idProfessor;
+        private int idProfessor;
         [Column(Name = "TextAviso", CanBeNull = false)]
         private string textoAviso;
         [Column(Name = "Assunto")]
@@ -37,7 +37,7 @@ namespace SAGA.Entidades
             set { textoAviso = value; }
         }
 
-        public Professores IdProfessor
+        public int IdProfessor
         {
             get { return idProfessor; }
             set { idProfessor = value; }

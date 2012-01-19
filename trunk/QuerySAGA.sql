@@ -118,6 +118,8 @@ DiaSemana varchar(15) not null,
 Turno int not null,
 constraint FK_Horarios_Disciplinas foreign key (IdDisciplina) references Disciplinas,
 constraint FK_Horarios_Turmas foreign key (IdTurma) references Turmas,
+constraint PK_IdDisciplina_Horarios primary key (IdDisciplina),
+constraint PK_IdTurma_Horarios primary key (IdTurma),
 );
 
 insert into TipoUsuario values(1)

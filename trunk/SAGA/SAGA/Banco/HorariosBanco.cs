@@ -35,7 +35,7 @@ namespace SAGA.Banco
                 for (int coluna = 0; coluna < 5; coluna++)
                 {
                     
-                    horario.IdDisciplina = disciplinasBanco.GetIdDisciplina(horarios[linha,coluna]);
+                    horario.IdDisciplina = Convert.ToInt32(disciplinasBanco.GetIdDisciplina(horarios[linha,coluna]));
 
                     switch (coluna)
                     {
@@ -94,7 +94,7 @@ namespace SAGA.Banco
                     }
 
 
-                    horario.IdTurma = idTurma;
+                    horario.IdTurma = Convert.ToInt32(idTurma);
                     horario.Turno = turno;
 
                     sagaCtx.Horario.InsertOnSubmit(horario);

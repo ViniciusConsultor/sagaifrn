@@ -15,9 +15,9 @@ namespace SAGA.Entidades
         [Column(Name = "BimestreNota", CanBeNull = false)]
         private int bimestreNota;
         [Column(Name = "IdAluno", CanBeNull = false)]
-        private Alunos idAluno;
+        private int idAluno;
         [Column(Name = "IdDisciplina", CanBeNull = false)]
-        private Disciplinas idDisciplina;
+        private int idDisciplina;
         private EntityRef<Alunos> aluno;
         private EntityRef<Disciplinas> disciplina;
 
@@ -28,20 +28,20 @@ namespace SAGA.Entidades
             set { this.disciplina.Entity = value; }
         }
 
-        [Association(Storage = "aluno", ThisKey = "IdAluno", OtherKey = "IAluno")]
+        [Association(Storage = "aluno", ThisKey = "idAluno", OtherKey = "idAluno")]
         public Alunos Aluno
         {
             get { return this.aluno.Entity; }
             set { this.aluno.Entity = value; }
         }
 
-        public Disciplinas IdDisciplina
+        public int IdDisciplina
         {
             get { return idDisciplina; }
             set { idDisciplina = value; }
         }
 
-        public Alunos IdAluno
+        public int IdAluno
         {
             get { return idAluno; }
             set { idAluno = value; }

@@ -16,21 +16,21 @@ namespace SAGA.Entidades
         private int numeroHorario;
         [Column(Name = "Turno", CanBeNull = false)]
         private int turno;
-        [Column(Name = "IdDisciplina", CanBeNull = false)]
-        private Disciplinas idDisciplina;
-        [Column(Name = "IdTurma", CanBeNull = false)]
-        private Turmas idTurma;
+        [Column(Name = "IdDisciplina", CanBeNull = false, IsPrimaryKey=true)]
+        private int idDisciplina;
+        [Column(Name = "IdTurma", CanBeNull = false, IsPrimaryKey=true)]
+        private int idTurma;
         private EntityRef<Disciplinas> disciplina;
         private EntityRef<Turmas> turma;
 
-        [Association(Storage = "turma", ThisKey = "IdTurma", OtherKey = "IdTurma")]
+        [Association(Storage = "turma", ThisKey = "idTurma", OtherKey = "turma")]
         public Turmas Turma
         {
             get { return this.turma.Entity; }
             set { this.turma.Entity = value; }
         }
             
-        [Association(Storage = "disciplina", ThisKey = "IdDisciplina", OtherKey = "IdDisciplina")]
+        [Association(Storage = "disciplina", ThisKey = "idDisciplina", OtherKey = "idDisciplina")]
         public Disciplinas Disciplina
         {
             get { return this.disciplina.Entity; }
@@ -55,13 +55,13 @@ namespace SAGA.Entidades
             set { numeroHorario = value; }
         }
 
-        public Disciplinas IdDisciplina
+        public int IdDisciplina
         {
             get { return idDisciplina; }
             set { idDisciplina = value; }
         }
 
-        public Turmas IdTurma
+        public int IdTurma
         {
             get { return idTurma; }
             set { idTurma = value; }

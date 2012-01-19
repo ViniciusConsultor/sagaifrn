@@ -14,9 +14,9 @@ namespace SAGA.Entidades
         [Column(Name="DataFalta", CanBeNull=false, IsPrimaryKey=true)]
         private DateTime dataFalta;
         [Column(Name = "IdAluno", CanBeNull = false)]
-        private Alunos idAluno;
+        private int idAluno;
         [Column(Name = "IdDisciplina", CanBeNull = false)]
-        private Disciplinas idDisciplina;
+        private int idDisciplina;
         [Column(Name = "Justificativa", CanBeNull = true)]
         private string justificativa;
         [Column(Name = "Quantidade", CanBeNull = true)]
@@ -31,14 +31,14 @@ namespace SAGA.Entidades
             set { this.disciplina.Entity = value; }
         }
 
-        [Association(Storage = "aluno", ThisKey = "IdAluno", OtherKey = "IdAluno")]
+        [Association(Storage = "aluno", ThisKey = "idAluno", OtherKey = "idAluno")]
         public Alunos Aluno
         {
             get { return this.aluno.Entity; }
             set { this.aluno.Entity = value; }
         }
 
-        public Alunos IdAlunos
+        public int IdAlunos
         {
             get { return idAluno; }
             set { idAluno = value; }
@@ -61,7 +61,7 @@ namespace SAGA.Entidades
             set { justificativa = value; }
         }
 
-        public Disciplinas IdDisciplina
+        public int IdDisciplina
         {
             get { return idDisciplina; }
             set { idDisciplina = value; }

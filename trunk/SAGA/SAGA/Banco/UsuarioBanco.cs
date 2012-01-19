@@ -55,7 +55,7 @@ namespace SAGA.Banco
         }
         public void InsertUsuario(TipoUsuario tipo, string nome, string senha)
         {
-            usuario.IdTipoUsuario = tipo;
+            usuario.IdTipoUsuario = Convert.ToInt32(tipo);
             usuario.NomeUsuario = nome;
             usuario.Senha = senha;
 

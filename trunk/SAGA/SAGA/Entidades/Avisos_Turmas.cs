@@ -11,19 +11,19 @@ namespace SAGA.Entidades
     class Avisos_Turmas
     {
         [Column(Name="IdAviso", CanBeNull=false, IsPrimaryKey=true)]
-        private Avisos idAviso;
+        private int idAviso;
         [Column(Name = "IdTurma", CanBeNull = false, IsPrimaryKey=true)]
-        private Turmas idTurma;
+        private int idTurma;
         private EntityRef<Avisos> aviso;
         private EntityRef<Turmas> turma;
         
-        public Turmas IdTurma
+        public int IdTurma
         {
             get { return idTurma; }
             set { idTurma = value; }
         }
 
-        public Avisos IdAviso
+        public int IdAviso
         {
             get { return idAviso; }
             set { idAviso = value; }
@@ -36,7 +36,7 @@ namespace SAGA.Entidades
             set { this.aviso.Entity = value; }
         }
 
-        [Association(Storage = "turma", ThisKey = "IdTurma", OtherKey = "IdTurma")]
+        [Association(Storage = "turma", ThisKey = "idTurma", OtherKey = "turma")]
         public Turmas Turma
         {
             get { return this.turma.Entity; }

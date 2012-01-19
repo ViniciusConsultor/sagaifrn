@@ -10,10 +10,10 @@ namespace SAGA.Entidades
     [Table(Name="Alunos")]
     class Alunos
     {
-        [Column(IsPrimaryKey=true, Name="IdAluno", CanBeNull=false)]
-        private Usuarios idAluno;
+        [Column(IsPrimaryKey=true, Name="IdAluno")]
+        private int idAluno;
         [Column(Name = "IdTurma", CanBeNull = false, IsPrimaryKey=true)]
-        private Turmas idTurma;
+        private int idTurma;
         private EntityRef<Usuarios> usuario;
         private EntityRef<Turmas> turma;
 
@@ -24,20 +24,20 @@ namespace SAGA.Entidades
             set { this.usuario.Entity = value; }
         }
 
-        [Association(Storage = "turma", ThisKey = "IdTurma", OtherKey = "IdTurma")]
+        [Association(Storage = "turma", ThisKey = "idTurma", OtherKey = "turma")]
         public Turmas Turma
         {
             get { return this.turma.Entity; }
             set { this.turma.Entity = value; }
         }
 
-        public Turmas IdTurma
+        public int IdTurma
         {
             get { return idTurma; }
             set { idTurma = value; }
         }
 
-        public Usuarios IdAluno
+        public int IdAluno
         {
             get { return idAluno; }
             set { idAluno = value; }
