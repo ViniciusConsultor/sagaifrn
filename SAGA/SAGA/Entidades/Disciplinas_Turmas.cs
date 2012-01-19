@@ -11,13 +11,13 @@ namespace SAGA.Entidades
     class Disciplinas_Turmas
     {
         [Column(Name="IdDisciplina", IsPrimaryKey=true, CanBeNull=false)]
-        private Disciplinas idDisciplina;
+        private int idDisciplina;
         [Column(Name = "IdTurma", IsPrimaryKey = true, CanBeNull = false)]
-        private Turmas idTurma;
+        private int idTurma;
         private EntityRef<Disciplinas> disciplina;
         private EntityRef<Turmas> turma;
 
-        [Association(Storage = "turma", ThisKey = "IdTurma", OtherKey = "IdTurma")]
+        [Association(Storage = "turma", ThisKey = "idTurma", OtherKey = "turma")]
         public Turmas Turma
         {
             get { return this.turma.Entity; }
@@ -31,13 +31,13 @@ namespace SAGA.Entidades
             set { this.disciplina.Entity = value; }
         }
 
-        public Turmas IdTurma
+        public int IdTurma
         {
             get { return idTurma; }
             set { idTurma = value; }
         }
 
-        public Disciplinas IdDisciplina
+        public int IdDisciplina
         {
             get { return idDisciplina; }
             set { idDisciplina = value; }

@@ -13,9 +13,9 @@ namespace SAGA.Entidades
         [Column(IsPrimaryKey = true, Name = "IdDuvida", CanBeNull = false)]
         private int idDuvida;
         [Column(Name = "IdAluno", CanBeNull = false)]
-        private Alunos idAluno;
+        private int idAluno;
         [Column(Name = "IdProfessor", CanBeNull = false)]
-        private Professores idProfessor;
+        private int idProfessor;
         [Column(Name = "Pergunta", CanBeNull = false)]
         private string duvida;
         [Column(Name = "Resposta", CanBeNull = false)]
@@ -45,13 +45,13 @@ namespace SAGA.Entidades
             set { idDuvida = value; }
         }
 
-        public Alunos IdAluno
+        public int IdAluno
         {
             get { return idAluno; }
             set { idAluno = value; }
         }
 
-        public Professores IdProfessor
+        public int IdProfessor
         {
             get { return idProfessor; }
             set { idProfessor = value; }

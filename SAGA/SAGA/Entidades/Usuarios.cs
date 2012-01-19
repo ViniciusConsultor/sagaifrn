@@ -17,19 +17,19 @@ namespace SAGA.Entidades
         [Column(Name = "NomeUsuario", CanBeNull = false)]
         private string nomeUsuario;
         [Column(Name = "IdTipoUsuario", CanBeNull = false)]
-        private TipoUsuario idTipoUsuario;
+        private int idTipoUsuario;
         [Column(Name = "Usuario", CanBeNull = false)]
         public static int usuario;
         private EntityRef<TipoUsuario> tipoUsuario;
 
-        [Association(Storage = "tipoUsuario", ThisKey = "IdTipoUsuario", OtherKey = "IdTIpoUsuario")]
+        [Association(Storage = "tipoUsuario", ThisKey = "IdTipoUsuario", OtherKey = "IdTipoUsuario")]
         public TipoUsuario TipoUsuario
         {
             get { return this.tipoUsuario.Entity; }
             set { this.tipoUsuario.Entity = value; }
         }
 
-        public TipoUsuario IdTipoUsuario
+        public int IdTipoUsuario
         {
             get { return idTipoUsuario; }
             set { idTipoUsuario = value; }
