@@ -12,13 +12,13 @@ namespace SAGA.Entidades
     {
         [Column(Name = "IdUsuario", IsPrimaryKey = true)]
         private int idUsuario;
-        [Column(Name = "Senha", CanBeNull = false)]
+        [Column(Name = "Senha")]
         private string senha;
-        [Column(Name = "NomeUsuario", CanBeNull = false)]
+        [Column(Name = "NomeUsuario")]
         private string nomeUsuario;
-        [Column(Name = "IdTipoUsuario", CanBeNull = false)]
-        private int idTipoUsuario;
-        [Column(Name = "Usuario", CanBeNull = false)]
+        [Column(Name = "IdTipoUsuario")]
+        private int? idTipoUsuario;
+        [Column(Name = "Usuario")]
         public static int usuario;
         private EntityRef<TipoUsuario> tipoUsuario;
 
@@ -29,7 +29,7 @@ namespace SAGA.Entidades
             set { this.tipoUsuario.Entity = value; }
         }
 
-        public int IdTipoUsuario
+        public int? IdTipoUsuario
         {
             get { return idTipoUsuario; }
             set { idTipoUsuario = value; }

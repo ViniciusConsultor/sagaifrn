@@ -10,7 +10,7 @@ namespace SAGA.Entidades
     [Table(Name = "TipoUsuario")]
     class TipoUsuario
     {
-        [Column(Name = "IdTipoUsuario", CanBeNull = false, IsPrimaryKey = true)]
+        [Column(Name = "IdTipoUsuario", IsPrimaryKey = true)]
         private int idTipoUsuario;
         public static int tipoUsuario;
 

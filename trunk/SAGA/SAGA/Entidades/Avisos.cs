@@ -10,15 +10,15 @@ namespace SAGA.Entidades
     [Table(Name="Avisos")]
     class Avisos
     {
-        [Column(IsPrimaryKey=true, Name="IdAviso", CanBeNull=false)]
+        [Column(IsPrimaryKey=true, Name="IdAviso")]
         private int idAviso;
         [Column(Name = "DataPublicacao")]
         private DateTime dataPublicacao;
         [Column(Name = "DataExpiro")]
         private DateTime dataExpiro;
         [Column(Name = "IdProfessor")]
-        private int idProfessor;
-        [Column(Name = "TextAviso", CanBeNull = false)]
+        private int? idProfessor;
+        [Column(Name = "TextAviso")]
         private string textoAviso;
         [Column(Name = "Assunto")]
         private string assunto;
@@ -37,7 +37,7 @@ namespace SAGA.Entidades
             set { textoAviso = value; }
         }
 
-        public int IdProfessor
+        public int? IdProfessor
         {
             get { return idProfessor; }
             set { idProfessor = value; }

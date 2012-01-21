@@ -39,6 +39,8 @@
             this.lblComparacao = new System.Windows.Forms.Label();
             this.lblSair = new System.Windows.Forms.Label();
             this.lblPaginaInicial = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblTurma = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtSenha2
@@ -134,11 +136,31 @@
             this.lblPaginaInicial.Text = "Página Inicial";
             this.lblPaginaInicial.Click += new System.EventHandler(this.lblPaginaInicial_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(329, 50);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 42;
+            // 
+            // lblTurma
+            // 
+            this.lblTurma.AutoSize = true;
+            this.lblTurma.Location = new System.Drawing.Point(286, 53);
+            this.lblTurma.Name = "lblTurma";
+            this.lblTurma.Size = new System.Drawing.Size(37, 13);
+            this.lblTurma.TabIndex = 43;
+            this.lblTurma.Text = "Turma";
+            this.lblTurma.Visible = false;
+            // 
             // frmModificarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(477, 262);
+            this.Controls.Add(this.lblTurma);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lblPaginaInicial);
             this.Controls.Add(this.lblSair);
             this.Controls.Add(this.lblComparacao);
@@ -170,6 +192,8 @@
         private System.Windows.Forms.Label lblComparacao;
         private System.Windows.Forms.Label lblSair;
         private System.Windows.Forms.Label lblPaginaInicial;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblTurma;
 
     }
 }

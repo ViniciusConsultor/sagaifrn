@@ -10,17 +10,17 @@ namespace SAGA.Entidades
     [Table(Name="Duvidas")]
     class Duvidas
     {
-        [Column(IsPrimaryKey = true, Name = "IdDuvida", CanBeNull = false)]
+        [Column(IsPrimaryKey = true, Name = "IdDuvida")]
         private int idDuvida;
-        [Column(Name = "IdAluno", CanBeNull = false)]
-        private int idAluno;
-        [Column(Name = "IdProfessor", CanBeNull = false)]
-        private int idProfessor;
-        [Column(Name = "Pergunta", CanBeNull = false)]
-        private string duvida;
-        [Column(Name = "Resposta", CanBeNull = false)]
+        [Column(Name = "IdAluno")]
+        private int? idAluno;
+        [Column(Name = "IdProfessor")]
+        private int? idProfessor;
+        [Column(Name = "Pergunta")]
+        private string pergunta;
+        [Column(Name = "Resposta")]
         private string resposta;
-        [Column(Name = "Assunto", CanBeNull = false)]
+        [Column(Name = "Assunto")]
         private string assunto;
         private EntityRef<Alunos> aluno;
         private EntityRef<Professores> professor;
@@ -45,25 +45,25 @@ namespace SAGA.Entidades
             set { idDuvida = value; }
         }
 
-        public int IdAluno
+        public int? IdAluno
         {
             get { return idAluno; }
             set { idAluno = value; }
         }
 
-        public int IdProfessor
+        public int? IdProfessor
         {
             get { return idProfessor; }
             set { idProfessor = value; }
         }
 
-        private string Duvida
+        public string Pergunta
         {
-            get { return duvida; }
-            set { duvida = value; }
+            get { return pergunta; }
+            set { pergunta = value; }
         }
 
-        private string Resposta
+        public string Resposta
         {
             get { return resposta; }
             set { resposta = value; }

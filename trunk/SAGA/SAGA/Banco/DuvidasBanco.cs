@@ -26,5 +26,27 @@ namespace SAGA.Banco
             }
         }
 
+        public Duvidas GetDuvidaPorPergunta(string pergunta, int idAluno)
+        {
+            try
+            {
+                var _duvida = sagaCtx.Duvida.Single(duv => duv.Aluno.IdAluno == idAluno && duv.Pergunta == pergunta);
+                return _duvida;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
+        public void InsertDuvida(int idAluno, string pergunta, string assunto, int idProfessor)
+        {
+            duvida.Aluno.Usuario.IdUsuario = idAluno;
+            duvida.Pergunta = pergunta;
+            duvida.Assunto = assunto;
+            duvida.Professor.Usuario.IdUsuario = idProfessor;
+
+            sagaCtx.Duvida.InsertOnSubmit(duvida);
+        }
     }
 }
