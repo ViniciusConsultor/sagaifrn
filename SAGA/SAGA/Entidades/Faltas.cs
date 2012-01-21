@@ -11,15 +11,15 @@ namespace SAGA.Entidades
     [Table(Name="Faltas")]
     class Faltas
     {
-        [Column(Name="DataFalta", CanBeNull=false, IsPrimaryKey=true)]
+        [Column(Name="DataFalta", IsPrimaryKey=true)]
         private DateTime dataFalta;
-        [Column(Name = "IdAluno", CanBeNull = false)]
-        private int idAluno;
-        [Column(Name = "IdDisciplina", CanBeNull = false)]
-        private int idDisciplina;
-        [Column(Name = "Justificativa", CanBeNull = true)]
+        [Column(Name = "IdAluno")]
+        private int? idAluno;
+        [Column(Name = "IdDisciplina")]
+        private int? idDisciplina;
+        [Column(Name = "Justificativa")]
         private string justificativa;
-        [Column(Name = "Quantidade", CanBeNull = true)]
+        [Column(Name = "Quantidade")]
         private int quatindade;
         private EntityRef<Alunos> aluno;
         private EntityRef<Disciplinas> disciplina;
@@ -38,7 +38,7 @@ namespace SAGA.Entidades
             set { this.aluno.Entity = value; }
         }
 
-        public int IdAlunos
+        public int? IdAlunos
         {
             get { return idAluno; }
             set { idAluno = value; }
@@ -61,7 +61,7 @@ namespace SAGA.Entidades
             set { justificativa = value; }
         }
 
-        public int IdDisciplina
+        public int? IdDisciplina
         {
             get { return idDisciplina; }
             set { idDisciplina = value; }

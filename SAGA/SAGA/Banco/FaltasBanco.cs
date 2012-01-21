@@ -26,5 +26,14 @@ namespace SAGA.Banco
                 return null;
             }
         }
+
+        public void ModificarFaltas(int idAluno, int idDisciplina, DateTime dataFalta, int quantidade)
+        {
+            falta.Aluno.IdAluno = idAluno;
+            falta.Disciplina.IdDisciplina = idDisciplina;
+            falta.DataFalta = dataFalta;
+            falta.Quatindade = quantidade;
+            sagaCtx.SubmitChanges();
+        }
     }
 }

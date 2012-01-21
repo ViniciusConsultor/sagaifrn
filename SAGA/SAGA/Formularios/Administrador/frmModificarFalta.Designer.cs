@@ -37,8 +37,8 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.lblSair = new System.Windows.Forms.Label();
             this.lblPaginaInicial = new System.Windows.Forms.Label();
-            this.qtdFalta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qtdFalta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFalta)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,6 +106,7 @@
             this.btnModificar.TabIndex = 8;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // lblSair
             // 
@@ -127,16 +128,16 @@
             this.lblPaginaInicial.Text = "Página Inicial";
             this.lblPaginaInicial.Click += new System.EventHandler(this.lblPaginaInicial_Click);
             // 
-            // qtdFalta
-            // 
-            this.qtdFalta.HeaderText = "Quantdade de Faltas";
-            this.qtdFalta.Name = "qtdFalta";
-            this.qtdFalta.Width = 130;
-            // 
             // data
             // 
             this.data.HeaderText = "Data";
             this.data.Name = "data";
+            // 
+            // qtdFalta
+            // 
+            this.qtdFalta.HeaderText = "Quantidade de Faltas";
+            this.qtdFalta.Name = "qtdFalta";
+            this.qtdFalta.Width = 131;
             // 
             // frmModificarFalta
             // 

@@ -37,6 +37,8 @@
             this.txtAviso = new System.Windows.Forms.TextBox();
             this.lblAviso = new System.Windows.Forms.Label();
             this.lblSair = new System.Windows.Forms.Label();
+            this.txtAssunto = new System.Windows.Forms.TextBox();
+            this.lblAssunto = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ckblTurmas
@@ -46,6 +48,7 @@
             this.ckblTurmas.Name = "ckblTurmas";
             this.ckblTurmas.Size = new System.Drawing.Size(342, 139);
             this.ckblTurmas.TabIndex = 15;
+            this.ckblTurmas.Visible = false;
             // 
             // dateTimePicker2
             // 
@@ -117,11 +120,30 @@
             this.lblSair.Text = "Sair";
             this.lblSair.Click += new System.EventHandler(this.lblSair_Click);
             // 
+            // txtAssunto
+            // 
+            this.txtAssunto.Location = new System.Drawing.Point(76, 28);
+            this.txtAssunto.MaxLength = 1024;
+            this.txtAssunto.Name = "txtAssunto";
+            this.txtAssunto.Size = new System.Drawing.Size(202, 20);
+            this.txtAssunto.TabIndex = 42;
+            // 
+            // lblAssunto
+            // 
+            this.lblAssunto.AutoSize = true;
+            this.lblAssunto.Location = new System.Drawing.Point(12, 31);
+            this.lblAssunto.Name = "lblAssunto";
+            this.lblAssunto.Size = new System.Drawing.Size(45, 13);
+            this.lblAssunto.TabIndex = 43;
+            this.lblAssunto.Text = "Assunto";
+            // 
             // frmAvisos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(406, 505);
+            this.Controls.Add(this.lblAssunto);
+            this.Controls.Add(this.txtAssunto);
             this.Controls.Add(this.lblSair);
             this.Controls.Add(this.ckblTurmas);
             this.Controls.Add(this.dateTimePicker2);
@@ -133,6 +155,7 @@
             this.Controls.Add(this.lblAviso);
             this.Name = "frmAvisos";
             this.Text = "frmAvisos";
+            this.Load += new System.EventHandler(this.frmAvisos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,6 +172,8 @@
         private System.Windows.Forms.TextBox txtAviso;
         private System.Windows.Forms.Label lblAviso;
         private System.Windows.Forms.Label lblSair;
+        private System.Windows.Forms.TextBox txtAssunto;
+        private System.Windows.Forms.Label lblAssunto;
 
     }
 }

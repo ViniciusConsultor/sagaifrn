@@ -10,14 +10,14 @@ namespace SAGA.Entidades
     [Table(Name = "Notas")]
     class Notas
     {
-        [Column(Name="ValorNota", CanBeNull=false, IsPrimaryKey=true)]
+        [Column(Name="ValorNota", IsPrimaryKey=true)]
         private double valorNota;
-        [Column(Name = "BimestreNota", CanBeNull = false)]
+        [Column(Name = "BimestreNota")]
         private int bimestreNota;
-        [Column(Name = "IdAluno", CanBeNull = false)]
-        private int idAluno;
-        [Column(Name = "IdDisciplina", CanBeNull = false)]
-        private int idDisciplina;
+        [Column(Name = "IdAluno")]
+        private int? idAluno;
+        [Column(Name = "IdDisciplina")]
+        private int? idDisciplina;
         private EntityRef<Alunos> aluno;
         private EntityRef<Disciplinas> disciplina;
 
@@ -35,13 +35,13 @@ namespace SAGA.Entidades
             set { this.aluno.Entity = value; }
         }
 
-        public int IdDisciplina
+        public int? IdDisciplina
         {
             get { return idDisciplina; }
             set { idDisciplina = value; }
         }
 
-        public int IdAluno
+        public int? IdAluno
         {
             get { return idAluno; }
             set { idAluno = value; }

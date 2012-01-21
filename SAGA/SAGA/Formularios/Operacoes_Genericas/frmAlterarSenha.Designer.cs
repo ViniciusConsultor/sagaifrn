@@ -30,10 +30,10 @@
         {
             this.btnModificar = new System.Windows.Forms.Button();
             this.lblNovaSenha = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNovaSenha = new System.Windows.Forms.TextBox();
+            this.txtNovaSenha2 = new System.Windows.Forms.TextBox();
             this.lblComparacao = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtSenhaAntiga = new System.Windows.Forms.TextBox();
             this.lblSenhaAtual = new System.Windows.Forms.Label();
             this.lblSair = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -46,6 +46,7 @@
             this.btnModificar.TabIndex = 0;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // lblNovaSenha
             // 
@@ -56,19 +57,19 @@
             this.lblNovaSenha.TabIndex = 1;
             this.lblNovaSenha.Text = "Nova Senha";
             // 
-            // textBox1
+            // txtNovaSenha
             // 
-            this.textBox1.Location = new System.Drawing.Point(87, 87);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtNovaSenha.Location = new System.Drawing.Point(87, 87);
+            this.txtNovaSenha.Name = "txtNovaSenha";
+            this.txtNovaSenha.Size = new System.Drawing.Size(143, 20);
+            this.txtNovaSenha.TabIndex = 2;
             // 
-            // textBox2
+            // txtNovaSenha2
             // 
-            this.textBox2.Location = new System.Drawing.Point(87, 113);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(143, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtNovaSenha2.Location = new System.Drawing.Point(87, 113);
+            this.txtNovaSenha2.Name = "txtNovaSenha2";
+            this.txtNovaSenha2.Size = new System.Drawing.Size(143, 20);
+            this.txtNovaSenha2.TabIndex = 4;
             // 
             // lblComparacao
             // 
@@ -78,12 +79,12 @@
             this.lblComparacao.Size = new System.Drawing.Size(0, 13);
             this.lblComparacao.TabIndex = 3;
             // 
-            // textBox3
+            // txtSenhaAntiga
             // 
-            this.textBox3.Location = new System.Drawing.Point(87, 46);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(143, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtSenhaAntiga.Location = new System.Drawing.Point(87, 46);
+            this.txtSenhaAntiga.Name = "txtSenhaAntiga";
+            this.txtSenhaAntiga.Size = new System.Drawing.Size(143, 20);
+            this.txtSenhaAntiga.TabIndex = 6;
             // 
             // lblSenhaAtual
             // 
@@ -110,11 +111,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 192);
             this.Controls.Add(this.lblSair);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtSenhaAntiga);
             this.Controls.Add(this.lblSenhaAtual);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtNovaSenha2);
             this.Controls.Add(this.lblComparacao);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNovaSenha);
             this.Controls.Add(this.lblNovaSenha);
             this.Controls.Add(this.btnModificar);
             this.Name = "frmAlterarSenha";
@@ -128,10 +129,10 @@
 
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Label lblNovaSenha;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNovaSenha;
+        private System.Windows.Forms.TextBox txtNovaSenha2;
         private System.Windows.Forms.Label lblComparacao;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtSenhaAntiga;
         private System.Windows.Forms.Label lblSenhaAtual;
         private System.Windows.Forms.Label lblSair;
     }

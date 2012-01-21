@@ -10,8 +10,6 @@ namespace SAGA.Entidades
     [Table(Name = "Professores")]
     class Professores
     {
-        [Column(Name = "IdProfessor", CanBeNull = false, IsPrimaryKey = true)]
-        private int idProfessor;
         private EntityRef<Usuarios> usuario;
 
         [Association(Storage = "usuario", ThisKey = "IdProfessor", OtherKey = "IdUsuario")]
@@ -21,10 +19,7 @@ namespace SAGA.Entidades
             set { this.usuario.Entity = value; }
         }
 
-        public int IdProfessor
-        {
-            get { return idProfessor; }
-            set { idProfessor = value; }
-        }
+        [Column(Name = "IdProfessor", IsPrimaryKey = true)]
+        public int? IdProfessor{get; set;}
     }
 }

@@ -10,10 +10,10 @@ namespace SAGA.Entidades
     [Table(Name="Disciplinas_Turmas")]
     class Disciplinas_Turmas
     {
-        [Column(Name="IdDisciplina", IsPrimaryKey=true, CanBeNull=false)]
-        private int idDisciplina;
-        [Column(Name = "IdTurma", IsPrimaryKey = true, CanBeNull = false)]
-        private int idTurma;
+        [Column(Name="IdDisciplina", IsPrimaryKey=true)]
+        private int? idDisciplina;
+        [Column(Name = "IdTurma", IsPrimaryKey = true)]
+        private int? idTurma;
         private EntityRef<Disciplinas> disciplina;
         private EntityRef<Turmas> turma;
 
@@ -31,13 +31,13 @@ namespace SAGA.Entidades
             set { this.disciplina.Entity = value; }
         }
 
-        public int IdTurma
+        public int? IdTurma
         {
             get { return idTurma; }
             set { idTurma = value; }
         }
 
-        public int IdDisciplina
+        public int? IdDisciplina
         {
             get { return idDisciplina; }
             set { idDisciplina = value; }

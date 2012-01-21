@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using SAGA.Entidades;
+using SAGA.Banco;
 
 namespace SAGA.Formularios.Operacoes_Genericas
 {
@@ -21,6 +22,29 @@ namespace SAGA.Formularios.Operacoes_Genericas
         {
             Usuarios.usuario = -1;
             this.Close();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if (txtSenhaAntiga.Text != "" && txtNovaSenha.Text == txtNovaSenha2.Text)
+            {
+                UsuarioBanco usuariobanco = new UsuarioBanco();
+
+                usuariobanco.ModificarSenha(Usuarios.usuario, txtSenhaAntiga.Text, txtNovaSenha.Text);
+            }
+            else
+            {
+                string mensagem = "";
+                if (txtNovaSenha.Text != txtNovaSenha2.Text)
+                {
+                    mensagem += "Digite o mesmo valor para os dois campos.";
+                }
+                if (txtSenhaAntiga.Text == "")
+                {
+                    mensagem += "Digite sua senha antiga";
+                }
+                MessageBox.Show(mensagem);
+            }
         }
     }
 }

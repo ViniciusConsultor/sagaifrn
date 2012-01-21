@@ -24,7 +24,8 @@ namespace SAGA.Formularios.Operacoes_Genericas
         {
             if (txtSenha.Text != "" && txtUsuario.Text != "")
             {
-                Usuarios.usuario = usuarioBanco.LogIn(txtUsuario.Text, txtSenha.Text);
+                Usuarios usuario = usuarioBanco.LogIn(txtUsuario.Text, txtSenha.Text);
+                Usuarios.usuario = usuario.IdUsuario;
 
                 if (Usuarios.usuario > 0)
                 {

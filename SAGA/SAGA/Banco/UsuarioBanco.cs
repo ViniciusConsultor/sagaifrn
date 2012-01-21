@@ -15,7 +15,7 @@ namespace SAGA.Banco
         private Usuarios usuario = new Usuarios();
         private TipoUsuario tipoUsuario = new TipoUsuario();
 
-        public int LogIn(string _usuario, string senha)
+        public Usuarios LogIn(string _usuario, string senha)
         {
             try
             {
@@ -28,11 +28,11 @@ namespace SAGA.Banco
 
                 //Usuarios.usuario = Convert.ToInt32(logIn);
                 //return Convert.ToInt32(logIn);
-                return Convert.ToInt32(usuario.IdUsuario);
+                return usuario;
             }
             catch (Exception)
             {
-                return -1;
+                return null;
             }
         }
 
@@ -61,16 +61,27 @@ namespace SAGA.Banco
 
             sagaCtx.Usuario.InsertOnSubmit(usuario);
         }
-        public int GetAluno(string nomeAluno)
+        public int GetIdUsuario(string nomeUsuario)
         {
             try
             {
-                usuario = sagaCtx.Usuario.Single(aluno => Convert.ToString(aluno.NomeUsuario) == nomeAluno && Convert.ToInt32(aluno.IdTipoUsuario) == 1);
+                usuario = sagaCtx.Usuario.Single(aluno => Convert.ToString(aluno.NomeUsuario) == nomeUsuario);
                 return usuario.IdUsuario;
             }
             catch (Exception)
             {
                 return -1;
+            }
+        }
+
+        public void ModificarSenha(int idUsuario, string senhaAntiga, string novaSenha)
+        {
+            if (senhaAntiga == usuario.Senha)
+            {
+                usuario.Senha = novaSenha;
+                usuario.IdUsuario = idUsuario;
+
+                sagaCtx.SubmitChanges();
             }
         }
     }

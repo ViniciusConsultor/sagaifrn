@@ -28,7 +28,7 @@ namespace SAGA.Banco
 
         private static string getConexao()
         {
-            return "Data Source = localhost; Initial Catalog = NorthWind; Integrated Security=SSPI";
+            return "Data Source = localhost; Initial Catalog = SAGA; Integrated Security = SSPI";
         }
     }
 }

@@ -36,13 +36,14 @@ namespace SAGA.Formularios.Administrador
             this.Close();
         }
         private UsuarioBanco usuarioBanco = new UsuarioBanco();
+        private DisciplinasBanco disciplinaBanco = new DisciplinasBanco();
 
         private void txtAluno_TextChanged(object sender, EventArgs e)
         {
             TurmasBanco turmaBanco = new TurmasBanco();
             Disciplinas_TurmasBanco dtBanco = new Disciplinas_TurmasBanco();
 
-            int idAluno = usuarioBanco.GetAluno(txtAluno.Text);
+            int idAluno = usuarioBanco.GetIdUsuario(txtAluno.Text);
             if (idAluno > 0)
             {
                 int turmaAluno = turmaBanco.GetTurmaAluno(idAluno);
@@ -71,10 +72,9 @@ namespace SAGA.Formularios.Administrador
 
         private void cbbDisciplina_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DisciplinasBanco disciplinaBanco = new DisciplinasBanco();
 
             int idDisciplina = Convert.ToInt32(disciplinaBanco.GetIdDisciplina(cbbDisciplina.Text));
-            int idAluno = usuarioBanco.GetAluno(txtAluno.Text);
+            int idAluno = usuarioBanco.GetIdUsuario(txtAluno.Text);
 
             IEnumerable<Faltas> faltas = faltasBanco.GetFaltas(idAluno, idDisciplina);
 
@@ -90,7 +90,7 @@ namespace SAGA.Formularios.Administrador
                     });
                 });
 
-            foreach (var _falta in dados)
+            foreach (var dado in dados)
             {
                 DataGridViewRow linha = new DataGridViewRow();
                 TextBox txt = new TextBox();
@@ -98,6 +98,16 @@ namespace SAGA.Formularios.Administrador
                 //txt.Text = _falta.Data;                
                 //linha
             }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        { 
+            int idAluno = usuarioBanco.GetIdUsuario(txtAluno.Text);
+            int idDisciplina = Convert.ToInt32(disciplinaBanco.GetIdDisciplina(cbbDisciplina.Text));
+            DateTime dataFalta = Convert.ToDateTime(dgvFalta.Columns[0]);
+            int quantidade = Convert.ToInt32(dgvFalta.Columns[1]);
+
+            faltasBanco.ModificarFaltas(idAluno, idDisciplina, dataFalta, quantidade);
         }
     }
 }
