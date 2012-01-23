@@ -18,7 +18,7 @@ namespace SAGA.Banco
             try
             {
                 var _turma = from t in sagaCtx.Turma
-                             where idAluno == Usuarios.usuario && turma.Turma == Convert.ToInt32(aluno.IdTurma)
+                             where idAluno == Usuarios.usuario && turma.Turma == Convert.ToInt32(aluno.Turma.Turma)
                              select t;
 
                 return Convert.ToInt32(_turma);
@@ -77,6 +77,7 @@ namespace SAGA.Banco
             {
                 turma.NomeTurma = nomeTurma;
                 sagaCtx.Turma.InsertOnSubmit(turma);
+                sagaCtx.SubmitChanges();
             }
             catch (Exception)
             {

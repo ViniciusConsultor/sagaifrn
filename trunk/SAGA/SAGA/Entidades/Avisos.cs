@@ -10,17 +10,11 @@ namespace SAGA.Entidades
     [Table(Name="Avisos")]
     class Avisos
     {
-        [Column(IsPrimaryKey=true, Name="IdAviso")]
         private int idAviso;
-        [Column(Name = "DataPublicacao")]
         private DateTime dataPublicacao;
-        [Column(Name = "DataExpiro")]
         private DateTime dataExpiro;
-        [Column(Name = "IdProfessor")]
         private int? idProfessor;
-        [Column(Name = "TextAviso")]
         private string textoAviso;
-        [Column(Name = "Assunto")]
         private string assunto;
         private EntityRef<Professores> professor;
 
@@ -31,36 +25,42 @@ namespace SAGA.Entidades
             set { this.professor.Entity = value; }
         }
 
+        [Column(Name = "TextAviso")]
         public string TextoAviso
         {
             get { return textoAviso; }
             set { textoAviso = value; }
         }
 
+        [Column(Name = "IdProfessor")]
         public int? IdProfessor
         {
             get { return idProfessor; }
             set { idProfessor = value; }
         }
 
+        [Column(Name = "DataExpiro")]
         public DateTime DataExpiro
         {
             get { return dataExpiro; }
             set { dataExpiro = value; }
         }
 
+        [Column(Name = "DataPublicacao")]
         public DateTime DataPublicacao
         {
             get { return dataPublicacao; }
             set { dataPublicacao = value; }
         }
 
+        [Column(IsPrimaryKey = true, Name = "IdAviso")]
         public int IdAviso
         {
             get { return idAviso; }
             set { idAviso = value; }
         }
 
+        [Column(Name = "Assunto")]
         public string Assunto
         {
             get { return assunto; }

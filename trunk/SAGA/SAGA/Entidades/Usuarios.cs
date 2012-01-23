@@ -10,15 +10,15 @@ namespace SAGA.Entidades
     [Table(Name = "Usuarios")]
     class Usuarios
     {
-        [Column(Name = "IdUsuario", IsPrimaryKey = true)]
+        
         private int idUsuario;
-        [Column(Name = "Senha")]
+        
         private string senha;
-        [Column(Name = "NomeUsuario")]
+        
         private string nomeUsuario;
-        [Column(Name = "IdTipoUsuario")]
+        
         private int? idTipoUsuario;
-        [Column(Name = "Usuario")]
+        /*[Column(Name = "Usuario")]*/
         public static int usuario;
         private EntityRef<TipoUsuario> tipoUsuario;
 
@@ -28,26 +28,27 @@ namespace SAGA.Entidades
             get { return this.tipoUsuario.Entity; }
             set { this.tipoUsuario.Entity = value; }
         }
-
+         [Column(Name = "IdTipoUsuario")]
         public int? IdTipoUsuario
         {
             get { return idTipoUsuario; }
             set { idTipoUsuario = value; }
         }
 
-
+        [Column(Name = "NomeUsuario")]
         public string NomeUsuario
         {
             get { return nomeUsuario; }
             set { nomeUsuario = value; }
         }
-
+        [Column(Name = "Senha")]
         public string Senha
         {
             get { return senha; }
             set { senha = value; }
         }
-
+       
+        [Column(Name = "IdUsuario", IsPrimaryKey = true)]
         public int IdUsuario
         {
             get { return idUsuario; }

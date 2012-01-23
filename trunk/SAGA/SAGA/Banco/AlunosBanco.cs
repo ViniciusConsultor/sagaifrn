@@ -16,7 +16,7 @@ namespace SAGA.Banco
             try
             {
                 var alunos = from _aluno in sagaCtx.Aluno
-                             where idTurma == Convert.ToInt32(aluno.IdTurma)
+                             where idTurma == Convert.ToInt32(aluno.Turma.Turma)
                              select _aluno;
                 return alunos;
             }

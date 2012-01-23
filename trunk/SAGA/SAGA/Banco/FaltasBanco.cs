@@ -16,7 +16,7 @@ namespace SAGA.Banco
             try
             {
                 var faltas = from _falta in sagaCtx.Falta
-                             where idAluno == Convert.ToInt32(falta.IdAlunos) && idDisciplina == falta.Disciplina.IdDisciplina
+                             where idAluno == Convert.ToInt32(falta.IdAluno) && idDisciplina == falta.Disciplina.IdDisciplina
                              select _falta;
 
                 return faltas;
