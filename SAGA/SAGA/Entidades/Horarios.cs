@@ -10,15 +10,10 @@ namespace SAGA.Entidades
     [Table(Name = "Horarios")]
     class Horarios
     {
-        [Column(Name = "DiaSemana")]
         private string diaSemana;
-        [Column(Name = "NumeroHorario")]
         private int numeroHorario;
-        [Column(Name = "Turno")]
         private int turno;
-        [Column(Name = "IdDisciplina", IsPrimaryKey=true)]
         private int? idDisciplina;
-        [Column(Name = "IdTurma", IsPrimaryKey=true)]
         private int? idTurma;
         private EntityRef<Disciplinas> disciplina;
         private EntityRef<Turmas> turma;
@@ -37,30 +32,35 @@ namespace SAGA.Entidades
             set { this.disciplina.Entity = value; }
         }
 
+        [Column(Name = "Turno")]
         public int Turno
         {
             get { return turno; }
             set { turno = value; }
         }
 
+        [Column(Name = "DiaSemana")]
         public string DiaSemana
         {
             get { return diaSemana; }
             set { diaSemana = value; }
         }
 
+        [Column(Name = "NumeroHorario")]
         public int NumeroHorario
         {
             get { return numeroHorario; }
             set { numeroHorario = value; }
         }
 
+        [Column(Name = "IdDisciplina", IsPrimaryKey = true)]
         public int? IdDisciplina
         {
             get { return idDisciplina; }
             set { idDisciplina = value; }
         }
 
+        [Column(Name = "IdTurma", IsPrimaryKey = true)]
         public int? IdTurma
         {
             get { return idTurma; }

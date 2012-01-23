@@ -10,17 +10,17 @@ namespace SAGA.Entidades
     [Table(Name = "Turmas")]
     class Turmas
     {
-        [Column(Name = "IdTurma", IsPrimaryKey = true)]
         private int turma;
-        [Column(Name = "NomeTurma")]
         private string nomeTurma;
 
+        [Column(Name = "NomeTurma")]
         public string NomeTurma
         {
             get { return nomeTurma; }
             set { nomeTurma = value; }
         }
 
+        [Column(Name = "IdTurma", IsPrimaryKey = true,IsDbGenerated=true)]
         public int Turma
         {
             get { return turma; }

@@ -88,8 +88,6 @@ C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\o
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\obj\x86\Debug\SAGA.exe
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\sagaifrn\SAGA\SAGA\obj\x86\Debug\SAGA.pdb
-C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\bin\Debug\SAGA.exe.config
-C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.exe
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\Nova pasta\SAGA\SAGA\bin\Debug\SAGA.exe.config
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.exe
 C:\Documents and Settings\200914010274\Desktop\sagaifrn\SAGA\SAGA\bin\Debug\SAGA.exe.config
@@ -152,3 +150,33 @@ C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\bin\Debug\
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\bin\Debug\SAGA.pdb
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.exe
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.pdb
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\bin\Debug\SAGA.exe
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\bin\Debug\SAGA.exe.config
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmCadastrarHorario.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmCadastrarTurma.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmCadastrarUsuario.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmInicialAdministrador.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmModificarFalta.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmModificarHorario.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmModificarNota.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmModificarUsuario.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Alunos.frmAvisosAlunos.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Alunos.frmBoletim.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Alunos.frmDuvidasAlunos.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Alunos.frmHorarios.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Alunos.frmInicialAlunos.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Operacoes_Genericas.frmAlterarSenha.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Operacoes_Genericas.frmAvisos.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Operacoes_Genericas.frmLogIn.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Professores.frmChamada.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Professores.frmDuvidasProfessores.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Professores.frmInicialProfessores.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Professores.frmJustificarFalta.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Professores.frmNotas.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Properties.Resources.resources
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.exe
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.pdb
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\bin\Debug\SAGA.pdb

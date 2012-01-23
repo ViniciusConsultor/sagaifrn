@@ -11,15 +11,10 @@ namespace SAGA.Entidades
     [Table(Name="Faltas")]
     class Faltas
     {
-        [Column(Name="DataFalta", IsPrimaryKey=true)]
         private DateTime dataFalta;
-        [Column(Name = "IdAluno")]
         private int? idAluno;
-        [Column(Name = "IdDisciplina")]
         private int? idDisciplina;
-        [Column(Name = "Justificativa")]
         private string justificativa;
-        [Column(Name = "Quantidade")]
         private int quatindade;
         private EntityRef<Alunos> aluno;
         private EntityRef<Disciplinas> disciplina;
@@ -38,7 +33,8 @@ namespace SAGA.Entidades
             set { this.aluno.Entity = value; }
         }
 
-        public int? IdAlunos
+        [Column(Name = "IdAluno")]
+        public int? IdAluno
         {
             get { return idAluno; }
             set { idAluno = value; }
@@ -49,24 +45,28 @@ namespace SAGA.Entidades
             dataFalta = DateTime.Today.Date;
         }
 
+        [Column(Name = "DataFalta", IsPrimaryKey = true)]
         public DateTime DataFalta
         {
             get { return dataFalta; }
             set { dataFalta = value; }
         }
 
+        [Column(Name = "Justificativa")]
         public string Justificativa
         {
             get { return justificativa; }
             set { justificativa = value; }
         }
 
+        [Column(Name = "IdDisciplina")]
         public int? IdDisciplina
         {
             get { return idDisciplina; }
             set { idDisciplina = value; }
         }
 
+        [Column(Name = "Quantidade")]
         public int Quatindade
         {
             get { return quatindade; }

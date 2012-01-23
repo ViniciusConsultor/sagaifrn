@@ -13,18 +13,21 @@ namespace SAGA.Formularios.Operacoes_Genericas
 {
     public partial class frmLogIn : Form
     {
+        private UsuarioBanco usuarioBanco;
         public frmLogIn()
         {
             InitializeComponent();
+            usuarioBanco = new UsuarioBanco();
         }
 
-        private UsuarioBanco usuarioBanco = new UsuarioBanco();
+        
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             if (txtSenha.Text != "" && txtUsuario.Text != "")
             {
-                Usuarios usuario = usuarioBanco.LogIn(txtUsuario.Text, txtSenha.Text);
+                Usuarios usuario = new Usuarios();
+                usuario = usuarioBanco.LogIn(txtUsuario.Text, txtSenha.Text);
                 Usuarios.usuario = usuario.IdUsuario;
 
                 if (Usuarios.usuario > 0)

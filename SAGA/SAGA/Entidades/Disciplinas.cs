@@ -10,17 +10,17 @@ namespace SAGA.Entidades
     [Table(Name="Disciplinas")]
     class Disciplinas
     {
-        [Column(Name="IdDisciplina", IsPrimaryKey=true)]
         private int idDisciplina;
-        [Column(Name="NomeDisciplina")]
         private string nomeDisciplina;
 
+        [Column(Name = "NomeDisciplina")]
         public string NomeDisciplina
         {
             get { return nomeDisciplina; }
             set { nomeDisciplina = value; }
         }
 
+        [Column(Name = "IdDisciplina", IsPrimaryKey = true)]
         public int IdDisciplina
         {
             get { return idDisciplina; }

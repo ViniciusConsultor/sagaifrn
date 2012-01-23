@@ -10,17 +10,11 @@ namespace SAGA.Entidades
     [Table(Name="Duvidas")]
     class Duvidas
     {
-        [Column(IsPrimaryKey = true, Name = "IdDuvida")]
         private int idDuvida;
-        [Column(Name = "IdAluno")]
         private int? idAluno;
-        [Column(Name = "IdProfessor")]
         private int? idProfessor;
-        [Column(Name = "Pergunta")]
         private string pergunta;
-        [Column(Name = "Resposta")]
         private string resposta;
-        [Column(Name = "Assunto")]
         private string assunto;
         private EntityRef<Alunos> aluno;
         private EntityRef<Professores> professor;
@@ -39,36 +33,42 @@ namespace SAGA.Entidades
             set { this.aluno.Entity = value; }
         }
 
+        [Column(IsPrimaryKey = true, Name = "IdDuvida")]
         public int IdDuvida
         {
             get { return idDuvida; }
             set { idDuvida = value; }
         }
 
+        [Column(Name = "IdAluno")]
         public int? IdAluno
         {
             get { return idAluno; }
             set { idAluno = value; }
         }
 
+        [Column(Name = "IdProfessor")]
         public int? IdProfessor
         {
             get { return idProfessor; }
             set { idProfessor = value; }
         }
 
+        [Column(Name = "Pergunta")]
         public string Pergunta
         {
             get { return pergunta; }
             set { pergunta = value; }
         }
 
+        [Column(Name = "Resposta")]
         public string Resposta
         {
             get { return resposta; }
             set { resposta = value; }
         }
 
+        [Column(Name = "Assunto")]
         public string Assunto
         {
             get { return assunto; }
