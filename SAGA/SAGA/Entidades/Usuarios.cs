@@ -54,5 +54,10 @@ namespace SAGA.Entidades
             get { return idUsuario; }
             set { idUsuario = value; }
         }
+
+        public Usuarios()
+        {
+            usuario = IdUsuario;
+        }
     }
 }

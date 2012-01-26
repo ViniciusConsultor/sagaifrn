@@ -45,6 +45,7 @@
             this.lblChamada.Size = new System.Drawing.Size(52, 13);
             this.lblChamada.TabIndex = 0;
             this.lblChamada.Text = "Chamada";
+            this.lblChamada.Click += new System.EventHandler(this.lblChamada_Click);
             // 
             // lblNotas
             // 
@@ -54,6 +55,7 @@
             this.lblNotas.Size = new System.Drawing.Size(35, 13);
             this.lblNotas.TabIndex = 1;
             this.lblNotas.Text = "Notas";
+            this.lblNotas.Click += new System.EventHandler(this.lblNotas_Click);
             // 
             // lblDuvidas
             // 
@@ -63,6 +65,7 @@
             this.lblDuvidas.Size = new System.Drawing.Size(46, 13);
             this.lblDuvidas.TabIndex = 2;
             this.lblDuvidas.Text = "Dúvidas";
+            this.lblDuvidas.Click += new System.EventHandler(this.lblDuvidas_Click);
             // 
             // lblAvisos
             // 
@@ -72,6 +75,7 @@
             this.lblAvisos.Size = new System.Drawing.Size(38, 13);
             this.lblAvisos.TabIndex = 3;
             this.lblAvisos.Text = "Avisos";
+            this.lblAvisos.Click += new System.EventHandler(this.lblAvisos_Click);
             // 
             // lblModificarSenha
             // 
@@ -81,6 +85,7 @@
             this.lblModificarSenha.Size = new System.Drawing.Size(84, 13);
             this.lblModificarSenha.TabIndex = 5;
             this.lblModificarSenha.Text = "Modificar Senha";
+            this.lblModificarSenha.Click += new System.EventHandler(this.lblModificarSenha_Click);
             // 
             // lblJustificarFalta
             // 
@@ -90,6 +95,7 @@
             this.lblJustificarFalta.Size = new System.Drawing.Size(74, 13);
             this.lblJustificarFalta.TabIndex = 4;
             this.lblJustificarFalta.Text = "Justificar Falta";
+            this.lblJustificarFalta.Click += new System.EventHandler(this.lblJustificarFalta_Click);
             // 
             // lblSair
             // 

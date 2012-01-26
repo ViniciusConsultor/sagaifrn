@@ -36,6 +36,7 @@
             this.txtSenhaAntiga = new System.Windows.Forms.TextBox();
             this.lblSenhaAtual = new System.Windows.Forms.Label();
             this.lblSair = new System.Windows.Forms.Label();
+            this.lblPaginaInicial = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnModificar
@@ -105,11 +106,22 @@
             this.lblSair.Text = "Sair";
             this.lblSair.Click += new System.EventHandler(this.lblSair_Click);
             // 
+            // lblPaginaInicial
+            // 
+            this.lblPaginaInicial.AutoSize = true;
+            this.lblPaginaInicial.Location = new System.Drawing.Point(171, 9);
+            this.lblPaginaInicial.Name = "lblPaginaInicial";
+            this.lblPaginaInicial.Size = new System.Drawing.Size(70, 13);
+            this.lblPaginaInicial.TabIndex = 42;
+            this.lblPaginaInicial.Text = "Página Inicial";
+            this.lblPaginaInicial.Click += new System.EventHandler(this.lblPaginaInicial_Click);
+            // 
             // frmAlterarSenha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 192);
+            this.Controls.Add(this.lblPaginaInicial);
             this.Controls.Add(this.lblSair);
             this.Controls.Add(this.txtSenhaAntiga);
             this.Controls.Add(this.lblSenhaAtual);
@@ -135,5 +147,6 @@
         private System.Windows.Forms.TextBox txtSenhaAntiga;
         private System.Windows.Forms.Label lblSenhaAtual;
         private System.Windows.Forms.Label lblSair;
+        private System.Windows.Forms.Label lblPaginaInicial;
     }
 }

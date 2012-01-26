@@ -8,14 +8,19 @@ using System.Text;
 using System.Windows.Forms;
 using SAGA.Entidades;
 using SAGA.Banco;
+using SAGA.Formularios.Administrador;
+using SAGA.Formularios.Alunos;
+using SAGA.Formularios.Professores;
 
 namespace SAGA.Formularios.Operacoes_Genericas
 {
     public partial class frmAlterarSenha : Form
     {
+        UsuarioBanco usuariobanco;
         public frmAlterarSenha()
         {
             InitializeComponent();
+            usuariobanco = new UsuarioBanco();
         }
 
         private void lblSair_Click(object sender, EventArgs e)
@@ -29,7 +34,6 @@ namespace SAGA.Formularios.Operacoes_Genericas
         {
             if (txtSenhaAntiga.Text != "" && txtNovaSenha.Text == txtNovaSenha2.Text)
             {
-                UsuarioBanco usuariobanco = new UsuarioBanco();
 
                 usuariobanco.ModificarSenha(Usuarios.usuario, txtSenhaAntiga.Text, txtNovaSenha.Text);
             }
@@ -45,6 +49,43 @@ namespace SAGA.Formularios.Operacoes_Genericas
                     mensagem += "Digite sua senha antiga";
                 }
                 MessageBox.Show(mensagem);
+            }
+        }
+
+        private void lblPaginaInicial_Click(object sender, EventArgs e)
+        {
+            int tipoUsuario = usuariobanco.GetTipoUsuario(Usuarios.usuario);
+
+            switch (tipoUsuario)
+            {
+                case 1:
+                {
+                    frmInicialAlunos frmAlunos = new frmInicialAlunos();
+                    frmAlunos.Show();
+                    this.Close();
+                    break;
+                }
+                case 2:
+                {
+                    frmInicialProfessores frmProfessores = new frmInicialProfessores();
+                    frmProfessores.Show();
+                    this.Close();
+                    break;
+                }
+                case 4:
+                {
+                    frmInicialAdministrador frmAdministrador = new frmInicialAdministrador();
+                    frmAdministrador.Show();
+                    this.Close();
+                    break;
+                }
+                case 3:
+                {
+                    frmAvisos frmAvisos = new frmAvisos();
+                    frmAvisos.Show();
+                    this.Close();
+                    break;
+                }
             }
         }
     }
