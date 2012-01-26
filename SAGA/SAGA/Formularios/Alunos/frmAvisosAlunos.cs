@@ -22,11 +22,13 @@ namespace SAGA.Formularios.Alunos
         {
             Usuarios.usuario = -1;
             this.Close();
+            Formularios.frmLogIn.Visible = true;
         }
 
         private void lblPaginaInicial_Click(object sender, EventArgs e)
         {
-            Formularios.frmAluno.Show();
+            frmInicialAlunos frmAluno = new frmInicialAlunos();
+            frmAluno.Show();
             this.Close();
         }
 

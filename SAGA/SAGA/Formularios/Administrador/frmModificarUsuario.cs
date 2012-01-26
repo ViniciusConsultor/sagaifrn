@@ -22,11 +22,13 @@ namespace SAGA.Formularios.Administrador
         {
             Usuarios.usuario = -1;
             this.Close();
+            Formularios.frmLogIn.Visible = true;
         }
 
         private void lblPaginaInicial_Click(object sender, EventArgs e)
         {
-            Formularios.frmAdministrador.Show();
+            frmInicialAdministrador frmInicialAdmin = new frmInicialAdministrador();
+            frmInicialAdmin.Show();
             this.Close();
         }
     }

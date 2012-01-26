@@ -19,22 +19,20 @@ namespace SAGA.Formularios.Administrador
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void lblSair_Click(object sender, EventArgs e)
         {
             Usuarios.usuario = -1;
             this.Close();
+            Formularios.frmLogIn.Visible = true;
         }
 
         private void lblPaginaInicial_Click(object sender, EventArgs e)
         {
-            Formularios.frmAdministrador.Show();
+            frmInicialAdministrador frmInicialAdmin = new frmInicialAdministrador();
+            frmInicialAdmin.Show();
             this.Close();
         }
+
         private UsuarioBanco usuarioBanco = new UsuarioBanco();
         private DisciplinasBanco disciplinaBanco = new DisciplinasBanco();
 

@@ -47,6 +47,7 @@ namespace SAGA.Banco
             duvida.Professor.Usuario.IdUsuario = idProfessor;
 
             sagaCtx.Duvida.InsertOnSubmit(duvida);
+            sagaCtx.SubmitChanges();
         }
     }
 }

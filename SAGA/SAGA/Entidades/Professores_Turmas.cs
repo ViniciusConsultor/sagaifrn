@@ -22,7 +22,7 @@ namespace SAGA.Entidades
             set { this.professor.Entity = value; }
         }
 
-        [Association(Storage = "turma", ThisKey = "idTurma", OtherKey = "turma")]
+        [Association(Storage = "turma", ThisKey = "IdTurma", OtherKey = "Turma")]
         public Turmas Turma
         {
             get { return this.turma.Entity; }

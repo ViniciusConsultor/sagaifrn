@@ -21,7 +21,7 @@ namespace SAGA.Formularios.Administrador
         {
             Usuarios.usuario = -1;
             this.Close();
-            Formularios.frmLogIn.Show();
+            Formularios.frmLogIn.Visible = true;
         }
 
         private void lblAddUsuario_Click(object sender, EventArgs e)

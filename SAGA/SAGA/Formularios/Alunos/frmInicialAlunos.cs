@@ -21,6 +21,7 @@ namespace SAGA.Formularios.Alunos
         {
             Usuarios.usuario = -1;
             this.Close();
+            Formularios.frmLogIn.Visible = true;
         }
 
         private void lblBoletim_Click(object sender, EventArgs e)

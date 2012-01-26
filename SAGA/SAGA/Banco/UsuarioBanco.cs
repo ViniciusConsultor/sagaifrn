@@ -19,12 +19,8 @@ namespace SAGA.Banco
         {
             try
             {
-                var us = from u in sagaCtx.Usuario where u.NomeUsuario.Equals(_usuario) select u;
                 usuario = sagaCtx.Usuario.Single(user => user.NomeUsuario.Equals(_usuario) && user.Senha.Equals(senha));
-
-                
-               
-
+                          
                 //var logIn = from id in sagaCtx.Usuario
                 //            where _usuario == usuario.NomeUsuario
                 //             && senha == usuario.Senha
@@ -36,7 +32,6 @@ namespace SAGA.Banco
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message);
                 return null;
             }
         }
@@ -65,6 +60,7 @@ namespace SAGA.Banco
             usuario.Senha = senha;
 
             sagaCtx.Usuario.InsertOnSubmit(usuario);
+            sagaCtx.SubmitChanges();
         }
         public int GetIdUsuario(string nomeUsuario)
         {
