@@ -98,6 +98,7 @@ namespace SAGA.Banco
                     horario.Turno = turno;
 
                     sagaCtx.Horario.InsertOnSubmit(horario);
+                    sagaCtx.SubmitChanges();
                 }
             }
         }

@@ -46,6 +46,7 @@ namespace SAGA.Banco
             avisos.Assunto = assunto;
 
             sagaCtx.Aviso.InsertOnSubmit(avisos);
+            sagaCtx.SubmitChanges();
         }
         public void InsertAvisoProfessor(DateTime dataInicial, DateTime dataFinal, string textoAviso, string assunto, List<int> idTurmas)
         {
@@ -60,6 +61,7 @@ namespace SAGA.Banco
                 avisos.Professor.IdProfessor = Usuarios.usuario;
                 
                 sagaCtx.Aviso.InsertOnSubmit(avisos);
+                sagaCtx.SubmitChanges();
             }
         }
     }

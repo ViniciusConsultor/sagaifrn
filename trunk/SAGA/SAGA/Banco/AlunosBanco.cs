@@ -33,6 +33,7 @@ namespace SAGA.Banco
             aluno.Turma.Turma = turma;
 
             sagaCtx.Aluno.InsertOnSubmit(aluno);
+            sagaCtx.SubmitChanges();
         }
     }
 }

@@ -24,7 +24,7 @@ namespace SAGA.Entidades
             set { this.disciplina.Entity = value; }
         }
 
-        [Association(Storage = "aluno", ThisKey = "idAluno", OtherKey = "idAluno")]
+        [Association(Storage = "aluno", ThisKey = "IdAluno", OtherKey = "IdAluno")]
         public Alunos Aluno
         {
             get { return this.aluno.Entity; }
