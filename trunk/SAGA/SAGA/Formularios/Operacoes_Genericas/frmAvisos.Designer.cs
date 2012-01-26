@@ -39,6 +39,8 @@
             this.lblSair = new System.Windows.Forms.Label();
             this.txtAssunto = new System.Windows.Forms.TextBox();
             this.lblAssunto = new System.Windows.Forms.Label();
+            this.lblPaginaInicial = new System.Windows.Forms.Label();
+            this.lblModificarSenha = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ckblTurmas
@@ -137,11 +139,34 @@
             this.lblAssunto.TabIndex = 43;
             this.lblAssunto.Text = "Assunto";
             // 
+            // lblPaginaInicial
+            // 
+            this.lblPaginaInicial.AutoSize = true;
+            this.lblPaginaInicial.Location = new System.Drawing.Point(293, 9);
+            this.lblPaginaInicial.Name = "lblPaginaInicial";
+            this.lblPaginaInicial.Size = new System.Drawing.Size(70, 13);
+            this.lblPaginaInicial.TabIndex = 44;
+            this.lblPaginaInicial.Text = "Página Inicial";
+            this.lblPaginaInicial.Click += new System.EventHandler(this.lblPaginaInicial_Click);
+            // 
+            // lblModificarSenha
+            // 
+            this.lblModificarSenha.AutoSize = true;
+            this.lblModificarSenha.Location = new System.Drawing.Point(203, 9);
+            this.lblModificarSenha.Name = "lblModificarSenha";
+            this.lblModificarSenha.Size = new System.Drawing.Size(84, 13);
+            this.lblModificarSenha.TabIndex = 45;
+            this.lblModificarSenha.Text = "Modificar Senha";
+            this.lblModificarSenha.Visible = false;
+            this.lblModificarSenha.Click += new System.EventHandler(this.lblModificarSenha_Click);
+            // 
             // frmAvisos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(406, 505);
+            this.Controls.Add(this.lblModificarSenha);
+            this.Controls.Add(this.lblPaginaInicial);
             this.Controls.Add(this.lblAssunto);
             this.Controls.Add(this.txtAssunto);
             this.Controls.Add(this.lblSair);
@@ -174,6 +199,8 @@
         private System.Windows.Forms.Label lblSair;
         private System.Windows.Forms.TextBox txtAssunto;
         private System.Windows.Forms.Label lblAssunto;
+        private System.Windows.Forms.Label lblPaginaInicial;
+        private System.Windows.Forms.Label lblModificarSenha;
 
     }
 }

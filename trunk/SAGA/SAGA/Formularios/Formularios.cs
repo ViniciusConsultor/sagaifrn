@@ -18,6 +18,7 @@ namespace SAGA.Formularios
         public static frmCadastrarHorario frmCadHorario = new frmCadastrarHorario();
         public static frmCadastrarTurma frmCadTurma = new frmCadastrarTurma();
         public static frmCadastrarUsuario frmCadUsuario = new frmCadastrarUsuario();
+        public static frmChamada frmChamada = new frmChamada();
         public static frmDuvidasAlunos frmDuvAlunos = new frmDuvidasAlunos();
         public static frmDuvidasProfessores frmDuvProfessores = new frmDuvidasProfessores();
         public static frmHorarios frmHorarios = new frmHorarios();

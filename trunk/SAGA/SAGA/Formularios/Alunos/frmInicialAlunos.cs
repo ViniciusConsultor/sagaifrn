@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using SAGA.Entidades;
+using SAGA.Formularios.Operacoes_Genericas;
 
 namespace SAGA.Formularios.Alunos
 {
@@ -26,32 +27,77 @@ namespace SAGA.Formularios.Alunos
 
         private void lblBoletim_Click(object sender, EventArgs e)
         {
-            Formularios.frmBoletim.Show();
-            this.Close();
+            if (Formularios.frmBoletim == null)
+            {
+                frmBoletim frmBoletim = new frmBoletim();
+                frmBoletim.Show();
+                this.Close();
+            }
+            else
+            {
+                Formularios.frmBoletim.Show();
+                this.Close();
+            }
         }
 
         private void lblHorarios_Click(object sender, EventArgs e)
         {
-            Formularios.frmHorarios.Show();
-            this.Close();
+            if (Formularios.frmHorarios == null)
+            {
+                frmHorarios frmHorarios = new frmHorarios();
+                frmHorarios.Show();
+                this.Close();
+            }
+            else
+            {
+                Formularios.frmHorarios.Show();
+                this.Close();
+            }
         }
 
         private void lblDuvidas_Click(object sender, EventArgs e)
         {
-            Formularios.frmDuvAlunos.Show();
-            this.Close();
+            if (Formularios.frmDuvAlunos == null)
+            {
+                frmDuvidasAlunos frmDuvAlunos = new frmDuvidasAlunos();
+                frmDuvAlunos.Show();
+                this.Close();
+            }
+            else
+            {
+                Formularios.frmDuvAlunos.Show();
+                this.Close();
+            }
         }
 
         private void lblAvisos_Click(object sender, EventArgs e)
         {
-            Formularios.frmAvisosAlunos.Show();
-            this.Close();
+            if (Formularios.frmAvisosAlunos == null)
+            {
+                frmAvisosAlunos frmAvisosAlunos = new frmAvisosAlunos();
+                frmAvisosAlunos.Show();
+                this.Close();
+            }
+            else
+            {
+                Formularios.frmAvisosAlunos.Show();
+                this.Close();
+            }
         }
 
         private void lblModificarSenha_Click(object sender, EventArgs e)
         {
-            Formularios.frmAlterar.Show();
-            this.Close();
+            if (Formularios.frmAlterar == null)
+            {
+                frmAlterarSenha frmAlterar = new frmAlterarSenha();
+                frmAlterar.Show();
+                this.Close();
+            }
+            else
+            {
+                Formularios.frmAlterar.Show();
+                this.Close();
+            }
         }
     }
 }
