@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using SAGA.Entidades;
 using SAGA.Banco;
+using SAGA.Formularios.Operacoes_Genericas;
 
 namespace SAGA.Formularios.Alunos
 {
@@ -22,7 +23,7 @@ namespace SAGA.Formularios.Alunos
         {
             Usuarios.usuario = -1;
             this.Close();
-            Formularios.frmLogIn.Visible = true;
+            frmLogIn.logIn.Visible = true;
         }
 
         private void lblPaginaInicial_Click(object sender, EventArgs e)

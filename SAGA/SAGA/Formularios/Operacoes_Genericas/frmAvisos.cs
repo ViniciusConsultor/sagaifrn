@@ -90,17 +90,9 @@ namespace SAGA.Formularios.Operacoes_Genericas
 
         private void lblModificarSenha_Click(object sender, EventArgs e)
         {
-            if (Formularios.frmAlterar == null)
-            {
                 frmAlterarSenha frmAlterar = new frmAlterarSenha();
                 frmAlterar.Show();
                 this.Close();
-            }
-            else
-            {
-                frmAlterar.Show();
-                this.Close();
-            }
         }
     }
 }

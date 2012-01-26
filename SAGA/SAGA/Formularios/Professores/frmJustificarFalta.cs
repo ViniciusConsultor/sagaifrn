@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using SAGA.Entidades;
+using SAGA.Formularios.Operacoes_Genericas;
 
 namespace SAGA.Formularios.Professores
 {

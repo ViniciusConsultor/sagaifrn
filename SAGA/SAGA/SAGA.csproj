@@ -152,7 +152,6 @@
     <Compile Include="Formularios\Alunos\frmInicialAlunos.Designer.cs">
       <DependentUpon>frmInicialAlunos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Formularios.cs" />
     <Compile Include="Formularios\Operacoes_Genericas\frmAlterarSenha.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -8,11 +8,15 @@ using System.Text;
 using System.Windows.Forms;
 using SAGA.Banco;
 using SAGA.Entidades;
+using SAGA.Formularios.Administrador;
+using SAGA.Formularios.Alunos;
+using SAGA.Formularios.Professores;
 
 namespace SAGA.Formularios.Operacoes_Genericas
 {
     public partial class frmLogIn : Form
     {
+        public static frmLogIn logIn = new frmLogIn();
         private UsuarioBanco usuarioBanco;
         public frmLogIn()
         {
@@ -37,21 +41,33 @@ namespace SAGA.Formularios.Operacoes_Genericas
                     switch (TipoUsuario.tipoUsuario)
                     {
                         case 1:
-                            Formularios.frmAluno.Show();
-                            this.Visible = false;
-                            break;
+                            {
+                                    frmInicialAlunos frmAluno = new frmInicialAlunos();
+                                    frmAluno.Show();
+                                    this.Visible = false;
+                                    break;
+                            }
                         case 2:
-                            Formularios.frmProfessor.Show();
-                            this.Visible = false;
-                            break;
+                            {
+                                    frmInicialProfessores frmProfessor = new frmInicialProfessores();
+                                    frmProfessor.Show();
+                                    this.Visible = false;
+                                    break;
+                            }
                         case 3:
-                            Formularios.frmAdministrador.Show();
-                            this.Visible = false;
-                            break;
+                            {
+                                    frmInicialAdministrador frmAdministrador = new frmInicialAdministrador();
+                                    frmAdministrador.Show();
+                                    this.Visible = false;
+                                    break;
+                            }
                         case 4:
-                            Formularios.frmAvisos.Show();
-                            this.Visible = false;
-                            break;
+                            {
+                                    frmAvisos frmAvisos = new frmAvisos();
+                                    frmAvisos.Show();
+                                    this.Visible = false;
+                                    break;
+                            }
                         default:
                             MessageBox.Show("Houve um erro durante a conexão com o banco", "Erro");
                             TipoUsuario.tipoUsuario = 0;

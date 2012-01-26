@@ -30,7 +30,7 @@ namespace SAGA.Banco
                 //return Convert.ToInt32(logIn);
                 return usuario;
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return null;
             }
@@ -75,12 +75,25 @@ namespace SAGA.Banco
             }
         }
 
+        public Usuarios GetUsuario(int idUsuario)
+        {
+            try
+            {
+                var usuario = sagaCtx.Usuario.Single(user => user.IdUsuario == idUsuario);
+                return usuario;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
         public void ModificarSenha(int idUsuario, string senhaAntiga, string novaSenha)
         {
+            usuario = GetUsuario(idUsuario);
             if (senhaAntiga == usuario.Senha)
             {
                 usuario.Senha = novaSenha;
-                usuario.IdUsuario = idUsuario;
 
                 sagaCtx.SubmitChanges();
             }

@@ -150,8 +150,9 @@ C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\bin\Debug\
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\bin\Debug\SAGA.pdb
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.exe
 C:\Users\Ipueira1\Documents\Sávyo\IFRN\Banco de Dados\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.pdb
-C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\bin\Debug\SAGA.exe
-C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\bin\Debug\SAGA.exe.config
+C:\Users\Sávyo\Documents\SAGA\SAGA\SAGA\bin\Debug\SAGA.exe.config
+C:\Users\Sávyo\Documents\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.exe
+C:\Users\Sávyo\Documents\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.pdb
 C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmCadastrarHorario.resources
 C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Formularios.Administrador.frmCadastrarTurma.resources
@@ -177,9 +178,8 @@ C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debu
 C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.Properties.Resources.resources
 C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\bin\Debug\SAGA.exe.config
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\bin\Debug\SAGA.exe
+C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\bin\Debug\SAGA.pdb
 C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.exe
 C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\obj\x86\Debug\SAGA.pdb
-C:\Documents and Settings\200914010045\Desktop\Nova pasta\SAGA\SAGA\bin\Debug\SAGA.pdb
-C:\Users\Sávyo\Documents\SAGA\SAGA\SAGA\bin\Debug\SAGA.exe.config
-C:\Users\Sávyo\Documents\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.exe
-C:\Users\Sávyo\Documents\SAGA\SAGA\SAGA\obj\x86\Debug\SAGA.pdb

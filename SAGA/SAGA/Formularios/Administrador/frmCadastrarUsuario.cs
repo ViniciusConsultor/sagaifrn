@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using SAGA.Banco;
+using SAGA.Formularios.Operacoes_Genericas;
 
 namespace SAGA.Formularios.Administrador
 {
@@ -25,7 +26,7 @@ namespace SAGA.Formularios.Administrador
         {
             Usuarios.usuario = -1;
             this.Close();
-            Formularios.frmLogIn.Visible = true;
+            frmLogIn.logIn.Visible = true;
         }
 
         private void lblPaginaInicial_Click(object sender, EventArgs e)

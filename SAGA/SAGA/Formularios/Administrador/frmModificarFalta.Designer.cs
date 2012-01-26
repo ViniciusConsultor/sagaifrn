@@ -68,7 +68,6 @@
             this.lblDisciplina.Size = new System.Drawing.Size(52, 13);
             this.lblDisciplina.TabIndex = 2;
             this.lblDisciplina.Text = "Disciplina";
-            this.lblDisciplina.Click += new System.EventHandler(this.label3_Click);
             // 
             // cbbDisciplina
             // 
