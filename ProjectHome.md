@@ -1,0 +1,1 @@
+Esse sistema tem o intuito de auxiliar o gerenciamento do dia-a-dia de uma escola, disponibilizando informações aos principais envolvidos no convívio acadêmico.
